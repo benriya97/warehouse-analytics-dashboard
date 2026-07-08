@@ -24,10 +24,10 @@ This project takes raw logistics data and transforms it into actionable business
 
 ## Key Findings
 
-- **156 stock variance issues** identified across warehouses
-- **47 outlier shipments** taking >45 days (vs. 30-day target)
-- **214 cancelled orders** distributed across warehouses
-- **Data quality score: 91%** after cleaning
+- 156 stock variance issues identified across warehouses
+- 47 outlier shipments taking >45 days (vs. 30-day target)
+- 214 cancelled orders distributed across warehouses
+- Data quality score: 91% after cleaning
 
 ## Tech Stack
 
@@ -39,9 +39,9 @@ This project takes raw logistics data and transforms it into actionable business
 ## Dashboard Features
 
 - Real-time KPI metrics (on-time delivery %, data quality score)
-- Shipping performance trends by country & warehouse
-- Data quality alerts & anomaly detection
-- Detailed tables for investigation & action
+- Shipping performance trends by country and warehouse
+- Data quality alerts and anomaly detection
+- Detailed tables for investigation and action
 - Stock variance tracking
 
 ## How to Run Locally
@@ -69,48 +69,50 @@ This project takes raw logistics data and transforms it into actionable business
 
 ## Project Structure
 
-warehouse-analytics-dashboard/
-├── data/
-│   ├── shipments.csv (raw data)
-│   ├── shipments_cleaned.csv (processed data)
-│   └── logistics.db (SQLite database)
-├── sql/
-│   └── validation_queries.sql (data quality checks)
-├── python/
-│   ├── data_validation.py (SQL validation report)
-│   └── data_cleaning.py (data cleaning pipeline)
-├── dashboards/
-│   └── app.py (Streamlit dashboard)
-├── requirements.txt (dependencies)
-└── README.md (this file)
+data/
+  - shipments.csv (raw shipping data)
+  - shipments_cleaned.csv (processed data)
+  - logistics.db (SQLite database)
+
+sql/
+  - validation_queries.sql (data quality checks)
+
+python/
+  - data_validation.py (SQL validation report)
+  - data_cleaning.py (data cleaning pipeline)
+
+dashboards/
+  - app.py (Streamlit dashboard)
+
+requirements.txt (dependencies)
+README.md (documentation)
 
 ## What This Demonstrates
 
-✓ SQL skills: Writing queries for data validation & discovery
+✓ SQL skills: Writing queries for data validation and discovery
 ✓ Python proficiency: Data cleaning, transformation, automation
 ✓ Dashboard design: Creating user-focused visualizations
-✓ Problem-solving: Identifying & documenting data quality issues
+✓ Problem-solving: Identifying and documenting data quality issues
 ✓ End-to-end pipeline: From raw data to actionable insights
 ✓ Cloud deployment: Live Streamlit Cloud hosting
 
 ## Data Quality Issues Found
 
-- 156 warehouse stock variances (>50 units difference)
+- 156 warehouse stock variances (>50 units difference between system and physical count)
 - 47 shipments exceeding 45-day delivery window
 - 214 cancelled orders (pattern analysis by warehouse)
 - 0 duplicate shipments (good data integrity)
 - 0 missing shipment IDs (complete records)
 
-## Use Cases
+## Real-World Use Cases
 
-- Operations: Optimize delivery routes & warehouse processes
-- Finance: Forecast shipping costs & analyze variances
+- Operations: Optimize delivery routes and warehouse processes
+- Finance: Forecast shipping costs and analyze variances
 - Leadership: Strategic capacity planning across regions
 
 ---
 
-Created as a portfolio project for Business Intelligence & Analytics roles
+Created as a portfolio project for Business Intelligence and Analytics roles
 Author: Riya Benoy
-Date: July 2026
 Repository: https://github.com/benriya97/warehouse-analytics-dashboard
 Live Demo: https://warehouse-analytics-dashboard-cnjfbkfpt5os7r9fiqv4hv.streamlit.app/
