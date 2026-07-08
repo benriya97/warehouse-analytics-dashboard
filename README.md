@@ -2,9 +2,9 @@
 
 An end-to-end data analytics project demonstrating SQL, Python, and dashboard design skills.
 
-## 🚀 Live Demo
+## Live Demo
 
-**[View Live Dashboard](https://warehouse-analytics-dashboard-cnjfbkfpt5os7r9fiqv4hv.streamlit.app/)**
+**View Live Dashboard:** https://warehouse-analytics-dashboard-cnjfbkfpt5os7r9fiqv4hv.streamlit.app/
 
 Click the link above to explore the interactive dashboard!
 
@@ -24,17 +24,17 @@ This project takes raw logistics data and transforms it into actionable business
 
 ## Key Findings
 
-- **156 stock variance issues** identified across warehouses (system vs physical count mismatch)
+- **156 stock variance issues** identified across warehouses
 - **47 outlier shipments** taking >45 days (vs. 30-day target)
 - **214 cancelled orders** distributed across warehouses
 - **Data quality score: 91%** after cleaning
 
 ## Tech Stack
 
-- **Data Processing:** Python, Pandas
-- **Database:** SQLite, SQL
-- **Visualization:** Streamlit, Plotly
-- **Version Control:** GitHub
+- Data Processing: Python, Pandas
+- Database: SQLite, SQL
+- Visualization: Streamlit, Plotly
+- Version Control: GitHub
 
 ## Dashboard Features
 
@@ -46,31 +46,29 @@ This project takes raw logistics data and transforms it into actionable business
 
 ## How to Run Locally
 
-\\\ash
-# Clone repository
-git clone https://github.com/benriya97/warehouse-analytics-dashboard.git
-cd warehouse-analytics-dashboard
+1. Clone repository:
+   git clone https://github.com/benriya97/warehouse-analytics-dashboard.git
+   cd warehouse-analytics-dashboard
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+2. Create virtual environment:
+   python -m venv venv
+   source venv/bin/activate
+   (On Windows: venv\Scripts\activate)
 
-# Install dependencies
-pip install -r requirements.txt
+3. Install dependencies:
+   pip install -r requirements.txt
 
-# Run data validation
-python python/data_validation.py
+4. Run data validation:
+   python python/data_validation.py
 
-# Run data cleaning
-python python/data_cleaning.py
+5. Run data cleaning:
+   python python/data_cleaning.py
 
-# Start dashboard
-streamlit run dashboards/app.py
-\\\
+6. Start dashboard:
+   streamlit run dashboards/app.py
 
 ## Project Structure
 
-\\\
 warehouse-analytics-dashboard/
 ├── data/
 │   ├── shipments.csv (raw data)
@@ -85,20 +83,18 @@ warehouse-analytics-dashboard/
 │   └── app.py (Streamlit dashboard)
 ├── requirements.txt (dependencies)
 └── README.md (this file)
-\\\
 
 ## What This Demonstrates
 
-✓ **SQL skills:** Writing queries for data validation & discovery  
-✓ **Python proficiency:** Data cleaning, transformation, automation  
-✓ **Dashboard design:** Creating user-focused visualizations  
-✓ **Problem-solving:** Identifying & documenting data quality issues  
-✓ **End-to-end pipeline:** From raw data to actionable insights  
-✓ **Cloud deployment:** Live Streamlit Cloud hosting  
+✓ SQL skills: Writing queries for data validation & discovery
+✓ Python proficiency: Data cleaning, transformation, automation
+✓ Dashboard design: Creating user-focused visualizations
+✓ Problem-solving: Identifying & documenting data quality issues
+✓ End-to-end pipeline: From raw data to actionable insights
+✓ Cloud deployment: Live Streamlit Cloud hosting
 
 ## Data Quality Issues Found
 
-The validation process identified:
 - 156 warehouse stock variances (>50 units difference)
 - 47 shipments exceeding 45-day delivery window
 - 214 cancelled orders (pattern analysis by warehouse)
@@ -107,16 +103,14 @@ The validation process identified:
 
 ## Use Cases
 
-This project demonstrates real-world BI work:
-- **Operations:** Optimize delivery routes & warehouse processes
-- **Finance:** Forecast shipping costs & analyze variances
-- **Leadership:** Strategic capacity planning across regions
+- Operations: Optimize delivery routes & warehouse processes
+- Finance: Forecast shipping costs & analyze variances
+- Leadership: Strategic capacity planning across regions
 
 ---
 
-*Created as a portfolio project for Business Intelligence & Analytics roles*
-
-**Author:** Riya Benoy  
-**Date:** July 2026  
-**Repository:** [GitHub](https://github.com/benriya97/warehouse-analytics-dashboard)  
-**Live Demo:** [Streamlit Cloud](https://warehouse-analytics-dashboard-cnjfbkfpt5os7r9fiqv4hv.streamlit.app/)
+Created as a portfolio project for Business Intelligence & Analytics roles
+Author: Riya Benoy
+Date: July 2026
+Repository: https://github.com/benriya97/warehouse-analytics-dashboard
+Live Demo: https://warehouse-analytics-dashboard-cnjfbkfpt5os7r9fiqv4hv.streamlit.app/
