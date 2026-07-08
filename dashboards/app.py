@@ -2,24 +2,22 @@
 import pandas as pd
 import sqlite3
 import plotly.express as px
-import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import os
 import random
 import numpy as np
 
-# Set page config
 st.set_page_config(page_title="Warehouse Analytics", layout="wide", initial_sidebar_state="expanded")
 
-# Load data
 @st.cache_data
 def load_data():
+    # Ensure data directory exists
+    os.makedirs('data', exist_ok=True)
+    
     db_path = 'data/logistics.db'
     
     # Check if database exists
     if not os.path.exists(db_path):
-        st.warning("Generating data on first load... (this happens once)")
-        
         # Generate synthetic data
         np.random.seed(42)
         random.seed(42)
@@ -32,8 +30,6 @@ def load_data():
         records = []
         for i in range(1000):
             ship_date = random.choice(dates)
-            
-            # 5% of shipments take >45 days
             if random.random() < 0.05:
                 delivery_date = ship_date + timedelta(days=random.randint(46, 60))
             else:
@@ -44,8 +40,8 @@ def load_data():
                 'warehouse': random.choice(warehouses),
                 'product': random.choice(products),
                 'quantity': random.randint(1, 500),
-                'ship_date': ship_date,
-                'delivery_date': delivery_date,
+                'ship_date': ship_date.isoformat(),
+                'delivery_date': delivery_date.isoformat(),
                 'status': random.choice(statuses),
                 'delivery_country': random.choice(['FR', 'DE', 'IT', 'ES', 'BE']),
                 'system_inventory': random.randint(0, 1000),
@@ -54,8 +50,6 @@ def load_data():
             records.append(record)
         
         df = pd.DataFrame(records)
-        
-        # Save to database
         conn = sqlite3.connect(db_path)
         df.to_sql('shipments', conn, if_exists='replace', index=False)
         conn.close()
@@ -65,11 +59,9 @@ def load_data():
     df = pd.read_sql_query("SELECT * FROM shipments", conn)
     conn.close()
     
-    # Convert date columns
+    # Convert and calculate
     df['ship_date'] = pd.to_datetime(df['ship_date'])
     df['delivery_date'] = pd.to_datetime(df['delivery_date'])
-    
-    # Recreate calculated columns
     df['days_in_transit'] = (df['delivery_date'] - df['ship_date']).dt.days
     df['is_outlier'] = df['days_in_transit'] > 45
     df['inventory_variance'] = abs(df['system_inventory'] - df['physical_count'])
@@ -77,73 +69,61 @@ def load_data():
     
     return df
 
-df = load_data()
+try:
+    df = load_data()
+except Exception as e:
+    st.error(f"Error loading data: {str(e)}")
+    st.stop()
 
-# ===== HEADER =====
+# HEADER
 st.title("📦 Warehouse & Shipping Analytics Dashboard")
 st.markdown("Real-time operational insights for logistics optimization")
 
-# ===== KEY METRICS =====
+# KEY METRICS
 st.subheader("Key Performance Indicators")
 
 col1, col2, col3, col4 = st.columns(4)
-
 with col1:
-    total_shipments = len(df)
-    st.metric("Total Shipments", f"{total_shipments:,}", "All time")
-
+    st.metric("Total Shipments", f"{len(df):,}", "All time")
 with col2:
-    on_time = (df['days_in_transit'] <= 30).sum()
-    on_time_pct = (on_time / len(df) * 100)
-    st.metric("On-Time Delivery %", f"{on_time_pct:.1f}%", f"{on_time:,} shipments")
-
+    on_time_pct = (df['days_in_transit'] <= 30).sum() / len(df) * 100
+    st.metric("On-Time Delivery %", f"{on_time_pct:.1f}%")
 with col3:
-    data_quality = ((~df['is_outlier']) & (~df['has_variance'])).sum() / len(df) * 100
-    st.metric("Data Quality Score", f"{data_quality:.1f}%", "Clean records")
-
+    quality = ((~df['is_outlier']) & (~df['has_variance'])).sum() / len(df) * 100
+    st.metric("Data Quality Score", f"{quality:.1f}%")
 with col4:
-    avg_transit = df['days_in_transit'].mean()
-    st.metric("Avg Transit Time", f"{avg_transit:.1f} days", "All routes")
+    st.metric("Avg Transit Time", f"{df['days_in_transit'].mean():.1f} days")
 
 st.divider()
 
-# ===== TAB 1: SHIPPING PERFORMANCE =====
 st.subheader("📊 Shipping Performance Analysis")
-
 tab1, tab2, tab3 = st.tabs(["Performance Trends", "Warehouse Analysis", "Data Quality Issues"])
 
 with tab1:
     col1, col2 = st.columns(2)
     
     with col1:
-        # Days in transit distribution
         fig1 = px.histogram(df, x='days_in_transit', nbins=30, 
                            title="Distribution of Transit Times",
-                           labels={'days_in_transit': 'Days', 'count': 'Number of Shipments'},
                            color_discrete_sequence=['#1f77b4'])
-        fig1.add_vline(x=30, line_dash="dash", line_color="red", 
-                      annotation_text="Target: 30 days", annotation_position="top right")
+        fig1.add_vline(x=30, line_dash="dash", line_color="red")
         st.plotly_chart(fig1, use_container_width=True)
     
     with col2:
-        # On-time delivery by country
-        delivery_country_perf = df.groupby('delivery_country').apply(
+        country_perf = df.groupby('delivery_country').apply(
             lambda x: ((x['days_in_transit'] <= 30).sum() / len(x) * 100)
         ).sort_values(ascending=False)
-        
-        fig2 = px.bar(x=delivery_country_perf.index, y=delivery_country_perf.values,
+        fig2 = px.bar(x=country_perf.index, y=country_perf.values,
                      title="On-Time Delivery % by Country",
-                     labels={'x': 'Country', 'y': 'On-Time %'},
-                     color=delivery_country_perf.values,
+                     color=country_perf.values,
                      color_continuous_scale='RdYlGn')
         st.plotly_chart(fig2, use_container_width=True)
 
 with tab2:
-    # Warehouse performance
     warehouse_stats = df.groupby('warehouse').agg({
         'shipment_id': 'count',
         'days_in_transit': 'mean',
-        'is_outlier': lambda x: (x).sum()
+        'is_outlier': 'sum'
     }).rename(columns={
         'shipment_id': 'Total Shipments',
         'days_in_transit': 'Avg Transit (days)',
@@ -152,7 +132,6 @@ with tab2:
     
     st.dataframe(warehouse_stats, use_container_width=True)
     
-    # Warehouse outliers chart
     fig3 = px.bar(warehouse_stats, x=warehouse_stats.index, y='Outlier Shipments',
                  title="Outlier Shipments by Warehouse",
                  color='Outlier Shipments',
@@ -162,50 +141,30 @@ with tab2:
 with tab3:
     st.subheader("⚠️ Data Quality Issues Found")
     
-    # Create tabs for different issue types
-    issue1, issue2, issue3 = st.columns(3)
-    
-    with issue1:
-        outlier_count = df['is_outlier'].sum()
-        st.metric("Outlier Shipments", f"{outlier_count}", ">45 days transit")
-    
-    with issue2:
-        variance_count = df['has_variance'].sum()
-        st.metric("Stock Variances", f"{variance_count}", ">50 units discrepancy")
-    
-    with issue3:
-        cancelled_count = (df['status'] == 'Cancelled').sum()
-        st.metric("Cancelled Orders", f"{cancelled_count}", "Requires investigation")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Outlier Shipments", f"{df['is_outlier'].sum()}", ">45 days")
+    with col2:
+        st.metric("Stock Variances", f"{df['has_variance'].sum()}", ">50 units")
+    with col3:
+        st.metric("Cancelled Orders", f"{(df['status'] == 'Cancelled').sum()}")
     
     st.divider()
     
-    # Show outlier shipments table
     st.subheader("🚨 Outlier Shipments (>45 days)")
-    outlier_df = df[df['is_outlier']][['shipment_id', 'warehouse', 'delivery_country', 
-                                        'days_in_transit']].head(10)
+    outlier_df = df[df['is_outlier']][['shipment_id', 'warehouse', 'delivery_country', 'days_in_transit']].head(10)
     st.dataframe(outlier_df, use_container_width=True)
     
-    # Show stock variance issues
     st.subheader("📦 Warehouse Stock Variance Issues")
-    variance_df = df[df['has_variance']][['warehouse', 'product', 'system_inventory', 
-                                          'physical_count', 'inventory_variance']].head(10)
+    variance_df = df[df['has_variance']][['warehouse', 'product', 'system_inventory', 'physical_count', 'inventory_variance']].head(10)
     st.dataframe(variance_df, use_container_width=True)
 
 st.divider()
-
-# ===== FOOTER =====
 st.subheader("📈 How This Data Is Used")
 st.info("""
 **Operational Decisions:**
 - Identify warehouses with poor on-time delivery → Resource allocation
 - Find stock variance issues → Inventory control improvements
 - Detect outlier shipments → Customer communication & claims processing
-- Track data quality → Improve system reliability
-
-**For Stakeholders:**
-- Operations: Optimize delivery routes & warehouse processes
-- Finance: Forecast shipping costs & claim reserves
-- Leadership: Strategic capacity planning across regions
 """)
-
-st.caption(f"Dashboard last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+st.caption(f"Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
