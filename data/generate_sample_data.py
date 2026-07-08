@@ -14,7 +14,12 @@ statuses = ['Delivered', 'In Transit', 'Pending', 'Delayed', 'Cancelled']
 records = []
 for i in range(1000):
     ship_date = random.choice(dates)
-    delivery_date = ship_date + timedelta(days=random.randint(1, 45))
+    
+    # 5% of shipments take >45 days (intentional outliers)
+    if random.random() < 0.05:
+        delivery_date = ship_date + timedelta(days=random.randint(46, 60))
+    else:
+        delivery_date = ship_date + timedelta(days=random.randint(1, 45))
     
     record = {
         'shipment_id': f'SHIP-{i+1000}',
@@ -32,4 +37,4 @@ for i in range(1000):
 
 df = pd.DataFrame(records)
 df.to_csv('data/shipments.csv', index=False)
-print(f'✓ Generated {len(df)} synthetic shipping records')
+print(f'✓ Generated {len(df)} synthetic shipping records (with ~5% outliers)')
