@@ -1,0 +1,1001 @@
+shipment_id,warehouse,product,quantity,ship_date,delivery_date,status,delivery_country,system_inventory,physical_count,days_in_transit,is_outlier,inventory_variance,has_variance
+SHIP-1000,WH-Paris,Product-C,126,2024-06-12,2024-06-20,In Transit,DE,754,104,8,False,650,True
+SHIP-1001,WH-Paris,Product-E,217,2024-06-22,2024-07-27,Delivered,FR,95,223,35,False,128,True
+SHIP-1002,WH-Toulouse,Product-A,288,2024-02-29,2024-04-02,In Transit,BE,429,225,33,False,204,True
+SHIP-1003,WH-Marseille,Product-A,389,2024-04-24,2024-06-01,In Transit,ES,348,284,38,False,64,True
+SHIP-1004,WH-Marseille,Product-A,48,2024-02-09,2024-02-23,Delayed,FR,367,867,14,False,500,True
+SHIP-1005,WH-Marseille,Product-A,374,2024-03-29,2024-05-07,Delayed,BE,127,996,39,False,869,True
+SHIP-1006,WH-Toulouse,Product-C,425,2024-04-06,2024-04-12,Cancelled,IT,591,196,6,False,395,True
+SHIP-1007,WH-Lyon,Product-C,41,2024-01-18,2024-01-21,In Transit,FR,389,284,3,False,105,True
+SHIP-1008,WH-Marseille,Product-B,190,2024-04-26,2024-06-06,Pending,DE,686,273,41,False,413,True
+SHIP-1009,WH-Paris,Product-E,326,2024-06-28,2024-08-11,In Transit,BE,746,250,44,False,496,True
+SHIP-1010,WH-Lille,Product-C,474,2024-02-11,2024-03-12,Cancelled,DE,701,332,30,False,369,True
+SHIP-1011,WH-Paris,Product-C,206,2024-01-15,2024-01-30,Pending,FR,216,935,15,False,719,True
+SHIP-1012,WH-Lyon,Product-D,203,2024-05-25,2024-06-15,Delayed,DE,271,142,21,False,129,True
+SHIP-1013,WH-Toulouse,Product-C,383,2024-03-04,2024-04-09,Cancelled,ES,919,597,36,False,322,True
+SHIP-1014,WH-Lyon,Product-B,261,2024-04-12,2024-05-06,Delayed,FR,773,48,24,False,725,True
+SHIP-1015,WH-Lyon,Product-D,306,2024-01-29,2024-02-08,Delivered,ES,390,610,10,False,220,True
+SHIP-1016,WH-Marseille,Product-E,441,2024-04-29,2024-06-02,Delivered,FR,698,906,34,False,208,True
+SHIP-1017,WH-Marseille,Product-A,151,2024-05-17,2024-06-04,Delayed,DE,464,3,18,False,461,True
+SHIP-1018,WH-Lyon,Product-E,468,2024-03-08,2024-04-10,Delivered,IT,861,654,33,False,207,True
+SHIP-1019,WH-Lyon,Product-B,192,2024-05-09,2024-06-17,In Transit,BE,976,797,39,False,179,True
+SHIP-1020,WH-Toulouse,Product-C,251,2024-05-15,2024-05-16,Delivered,FR,951,371,1,False,580,True
+SHIP-1021,WH-Paris,Product-B,450,2024-03-19,2024-04-04,Cancelled,FR,87,749,16,False,662,True
+SHIP-1022,WH-Toulouse,Product-B,66,2024-05-04,2024-05-09,Delayed,BE,169,271,5,False,102,True
+SHIP-1023,WH-Lille,Product-B,476,2024-05-15,2024-06-23,Cancelled,DE,730,319,39,False,411,True
+SHIP-1024,WH-Marseille,Product-D,461,2024-04-12,2024-05-25,Cancelled,ES,123,253,43,False,130,True
+SHIP-1025,WH-Marseille,Product-A,302,2024-02-27,2024-03-03,Cancelled,DE,602,225,5,False,377,True
+SHIP-1026,WH-Paris,Product-B,35,2024-01-02,2024-01-07,Delivered,IT,72,526,5,False,454,True
+SHIP-1027,WH-Lille,Product-B,277,2024-03-01,2024-03-19,In Transit,BE,590,484,18,False,106,True
+SHIP-1028,WH-Lille,Product-B,49,2024-03-03,2024-04-03,Delivered,ES,362,433,31,False,71,True
+SHIP-1029,WH-Paris,Product-A,32,2024-04-15,2024-05-15,Delayed,IT,819,882,30,False,63,True
+SHIP-1030,WH-Lyon,Product-B,275,2024-01-28,2024-02-13,Delayed,DE,432,187,16,False,245,True
+SHIP-1031,WH-Lyon,Product-A,227,2024-03-12,2024-04-11,Cancelled,FR,51,667,30,False,616,True
+SHIP-1032,WH-Paris,Product-B,86,2024-05-18,2024-05-19,Delayed,ES,492,218,1,False,274,True
+SHIP-1033,WH-Lyon,Product-D,2,2024-04-12,2024-04-16,Delayed,IT,948,802,4,False,146,True
+SHIP-1034,WH-Lille,Product-E,339,2024-04-26,2024-05-15,Delayed,DE,194,303,19,False,109,True
+SHIP-1035,WH-Toulouse,Product-E,32,2024-02-25,2024-02-29,Pending,FR,51,598,4,False,547,True
+SHIP-1036,WH-Toulouse,Product-B,30,2024-05-02,2024-06-04,Cancelled,FR,871,190,33,False,681,True
+SHIP-1037,WH-Paris,Product-B,207,2024-01-18,2024-02-26,Delivered,BE,252,592,39,False,340,True
+SHIP-1038,WH-Toulouse,Product-A,215,2024-06-01,2024-06-04,Cancelled,BE,535,323,3,False,212,True
+SHIP-1039,WH-Marseille,Product-B,136,2024-03-07,2024-03-21,Delayed,DE,687,660,14,False,27,False
+SHIP-1040,WH-Marseille,Product-A,5,2024-03-17,2024-04-16,Delayed,BE,576,102,30,False,474,True
+SHIP-1041,WH-Lyon,Product-E,136,2024-01-19,2024-02-23,In Transit,IT,902,70,35,False,832,True
+SHIP-1042,WH-Marseille,Product-B,225,2024-03-03,2024-03-27,Cancelled,IT,626,826,24,False,200,True
+SHIP-1043,WH-Paris,Product-E,154,2024-06-16,2024-07-20,Delivered,DE,270,118,34,False,152,True
+SHIP-1044,WH-Lyon,Product-C,145,2024-01-28,2024-03-04,Cancelled,DE,734,351,36,False,383,True
+SHIP-1045,WH-Marseille,Product-E,251,2024-02-22,2024-04-06,Pending,FR,94,649,44,False,555,True
+SHIP-1046,WH-Paris,Product-A,171,2024-04-18,2024-05-06,In Transit,IT,165,759,18,False,594,True
+SHIP-1047,WH-Lille,Product-E,5,2024-04-23,2024-05-29,Delivered,FR,967,904,36,False,63,True
+SHIP-1048,WH-Toulouse,Product-A,428,2024-06-25,2024-07-05,Pending,BE,565,151,10,False,414,True
+SHIP-1049,WH-Paris,Product-C,187,2024-04-20,2024-04-29,Delivered,IT,215,698,9,False,483,True
+SHIP-1050,WH-Paris,Product-C,400,2024-03-04,2024-04-16,Cancelled,ES,997,635,43,False,362,True
+SHIP-1051,WH-Lyon,Product-B,452,2024-02-09,2024-02-25,Delayed,FR,183,754,16,False,571,True
+SHIP-1052,WH-Lyon,Product-C,82,2024-03-26,2024-04-22,Delivered,ES,893,39,27,False,854,True
+SHIP-1053,WH-Lyon,Product-D,180,2024-04-30,2024-05-15,Pending,DE,228,24,15,False,204,True
+SHIP-1054,WH-Lille,Product-C,143,2024-06-17,2024-06-30,Delivered,IT,359,656,13,False,297,True
+SHIP-1055,WH-Toulouse,Product-C,481,2024-05-10,2024-06-05,Delivered,FR,898,993,26,False,95,True
+SHIP-1056,WH-Toulouse,Product-C,20,2024-03-07,2024-03-19,Delivered,BE,444,353,12,False,91,True
+SHIP-1057,WH-Toulouse,Product-E,60,2024-03-21,2024-04-18,Delayed,BE,194,260,28,False,66,True
+SHIP-1058,WH-Paris,Product-E,474,2024-01-12,2024-02-09,Cancelled,DE,372,441,28,False,69,True
+SHIP-1059,WH-Marseille,Product-E,161,2024-01-18,2024-03-01,Delivered,IT,519,316,43,False,203,True
+SHIP-1060,WH-Marseille,Product-D,357,2024-06-19,2024-07-16,Pending,BE,130,196,27,False,66,True
+SHIP-1061,WH-Lille,Product-B,316,2024-04-17,2024-05-30,Cancelled,IT,415,561,43,False,146,True
+SHIP-1062,WH-Marseille,Product-B,221,2024-01-01,2024-01-21,Cancelled,BE,670,329,20,False,341,True
+SHIP-1063,WH-Lille,Product-B,262,2024-04-29,2024-05-28,Delayed,DE,674,86,29,False,588,True
+SHIP-1064,WH-Toulouse,Product-C,48,2024-03-13,2024-04-15,In Transit,IT,230,825,33,False,595,True
+SHIP-1065,WH-Paris,Product-A,126,2024-02-20,2024-03-01,Delayed,BE,870,786,10,False,84,True
+SHIP-1066,WH-Lille,Product-E,100,2024-01-19,2024-02-18,Delayed,ES,409,249,30,False,160,True
+SHIP-1067,WH-Paris,Product-A,399,2024-02-07,2024-03-20,Delayed,DE,180,823,42,False,643,True
+SHIP-1068,WH-Lille,Product-A,286,2024-06-27,2024-07-31,In Transit,FR,467,136,34,False,331,True
+SHIP-1069,WH-Toulouse,Product-E,305,2024-04-28,2024-06-10,Pending,ES,627,834,43,False,207,True
+SHIP-1070,WH-Toulouse,Product-D,460,2024-05-09,2024-06-06,In Transit,ES,460,265,28,False,195,True
+SHIP-1071,WH-Marseille,Product-E,249,2024-03-04,2024-04-14,In Transit,IT,450,79,41,False,371,True
+SHIP-1072,WH-Marseille,Product-C,164,2024-03-14,2024-03-30,Cancelled,FR,141,154,16,False,13,False
+SHIP-1073,WH-Lyon,Product-B,33,2024-02-29,2024-03-25,Delayed,ES,338,555,25,False,217,True
+SHIP-1074,WH-Paris,Product-B,427,2024-04-29,2024-05-26,Delayed,ES,926,788,27,False,138,True
+SHIP-1075,WH-Paris,Product-E,195,2024-05-29,2024-07-13,Delayed,FR,965,360,45,False,605,True
+SHIP-1076,WH-Lille,Product-E,383,2024-03-17,2024-04-11,Cancelled,BE,919,225,25,False,694,True
+SHIP-1077,WH-Marseille,Product-D,249,2024-05-04,2024-05-19,Delivered,ES,344,684,15,False,340,True
+SHIP-1078,WH-Lyon,Product-D,471,2024-06-22,2024-07-18,In Transit,BE,546,27,26,False,519,True
+SHIP-1079,WH-Toulouse,Product-A,43,2024-04-10,2024-05-18,Delayed,DE,887,472,38,False,415,True
+SHIP-1080,WH-Marseille,Product-D,168,2024-02-16,2024-02-20,In Transit,ES,334,345,4,False,11,False
+SHIP-1081,WH-Lille,Product-C,428,2024-04-07,2024-04-25,Delivered,ES,19,767,18,False,748,True
+SHIP-1082,WH-Marseille,Product-B,333,2024-05-18,2024-05-22,Delivered,FR,772,31,4,False,741,True
+SHIP-1083,WH-Paris,Product-E,79,2024-03-04,2024-03-17,In Transit,DE,484,685,13,False,201,True
+SHIP-1084,WH-Lyon,Product-D,359,2024-01-30,2024-03-07,Pending,IT,171,620,37,False,449,True
+SHIP-1085,WH-Lyon,Product-C,56,2024-06-04,2024-06-12,Cancelled,FR,951,319,8,False,632,True
+SHIP-1086,WH-Lille,Product-D,483,2024-05-27,2024-07-10,In Transit,FR,606,707,44,False,101,True
+SHIP-1087,WH-Paris,Product-C,436,2024-06-09,2024-06-25,Cancelled,FR,815,579,16,False,236,True
+SHIP-1088,WH-Toulouse,Product-D,339,2024-01-11,2024-02-03,Pending,FR,518,663,23,False,145,True
+SHIP-1089,WH-Lille,Product-D,55,2024-03-28,2024-03-29,Delayed,IT,650,912,1,False,262,True
+SHIP-1090,WH-Lille,Product-B,376,2024-04-27,2024-05-07,Cancelled,IT,630,827,10,False,197,True
+SHIP-1091,WH-Lille,Product-D,423,2024-05-17,2024-06-17,Cancelled,IT,330,872,31,False,542,True
+SHIP-1092,WH-Marseille,Product-D,125,2024-03-03,2024-03-09,Delayed,BE,624,684,6,False,60,True
+SHIP-1093,WH-Paris,Product-D,436,2024-04-07,2024-04-29,Pending,DE,499,217,22,False,282,True
+SHIP-1094,WH-Marseille,Product-C,451,2024-03-31,2024-04-17,Cancelled,IT,569,10,17,False,559,True
+SHIP-1095,WH-Paris,Product-B,369,2024-05-12,2024-05-25,Delayed,ES,568,776,13,False,208,True
+SHIP-1096,WH-Lille,Product-D,230,2024-03-02,2024-04-16,Delivered,FR,301,226,45,False,75,True
+SHIP-1097,WH-Lyon,Product-C,340,2024-04-13,2024-05-28,Cancelled,IT,484,566,45,False,82,True
+SHIP-1098,WH-Lille,Product-E,170,2024-05-15,2024-06-07,Pending,ES,277,313,23,False,36,False
+SHIP-1099,WH-Paris,Product-B,162,2024-03-05,2024-03-20,Delivered,BE,973,780,15,False,193,True
+SHIP-1100,WH-Lyon,Product-B,379,2024-06-25,2024-07-07,Delayed,IT,741,603,12,False,138,True
+SHIP-1101,WH-Marseille,Product-A,427,2024-05-14,2024-06-22,In Transit,IT,232,369,39,False,137,True
+SHIP-1102,WH-Paris,Product-E,65,2024-02-15,2024-03-06,Pending,FR,997,55,20,False,942,True
+SHIP-1103,WH-Lyon,Product-D,53,2024-05-21,2024-06-09,Delivered,BE,291,480,19,False,189,True
+SHIP-1104,WH-Marseille,Product-B,495,2024-05-02,2024-05-31,Delivered,IT,963,882,29,False,81,True
+SHIP-1105,WH-Paris,Product-D,252,2024-05-02,2024-05-10,Delivered,BE,644,702,8,False,58,True
+SHIP-1106,WH-Lyon,Product-E,486,2024-01-14,2024-01-24,Pending,FR,254,121,10,False,133,True
+SHIP-1107,WH-Toulouse,Product-E,405,2024-05-22,2024-06-18,Cancelled,DE,794,535,27,False,259,True
+SHIP-1108,WH-Lille,Product-C,441,2024-04-07,2024-05-06,Cancelled,ES,312,582,29,False,270,True
+SHIP-1109,WH-Toulouse,Product-A,486,2024-06-07,2024-06-11,In Transit,DE,270,676,4,False,406,True
+SHIP-1110,WH-Lyon,Product-B,283,2024-01-21,2024-02-01,Delivered,DE,2,418,11,False,416,True
+SHIP-1111,WH-Toulouse,Product-D,150,2024-04-25,2024-06-09,Delivered,DE,295,723,45,False,428,True
+SHIP-1112,WH-Lille,Product-A,352,2024-03-13,2024-04-27,In Transit,IT,806,810,45,False,4,False
+SHIP-1113,WH-Lyon,Product-D,59,2024-06-09,2024-07-17,Cancelled,DE,663,152,38,False,511,True
+SHIP-1114,WH-Paris,Product-A,85,2024-03-09,2024-03-19,Pending,BE,766,844,10,False,78,True
+SHIP-1115,WH-Lille,Product-A,240,2024-05-25,2024-06-13,Pending,ES,965,278,19,False,687,True
+SHIP-1116,WH-Lille,Product-D,42,2024-05-08,2024-06-12,Cancelled,FR,910,442,35,False,468,True
+SHIP-1117,WH-Marseille,Product-A,47,2024-03-23,2024-05-01,In Transit,BE,601,973,39,False,372,True
+SHIP-1118,WH-Marseille,Product-E,21,2024-01-06,2024-02-19,In Transit,ES,531,667,44,False,136,True
+SHIP-1119,WH-Lyon,Product-E,224,2024-04-23,2024-05-11,Delayed,FR,481,356,18,False,125,True
+SHIP-1120,WH-Marseille,Product-A,440,2024-04-14,2024-05-06,In Transit,IT,421,710,22,False,289,True
+SHIP-1121,WH-Lille,Product-E,19,2024-05-06,2024-05-25,Delayed,FR,322,258,19,False,64,True
+SHIP-1122,WH-Lille,Product-E,423,2024-03-23,2024-03-31,Delivered,BE,473,423,8,False,50,False
+SHIP-1123,WH-Toulouse,Product-C,319,2024-01-14,2024-01-27,Delayed,ES,778,52,13,False,726,True
+SHIP-1124,WH-Toulouse,Product-B,475,2024-02-22,2024-03-11,Pending,ES,901,715,18,False,186,True
+SHIP-1125,WH-Paris,Product-E,410,2024-05-04,2024-05-12,In Transit,DE,318,564,8,False,246,True
+SHIP-1126,WH-Lille,Product-A,116,2024-01-04,2024-02-09,Delivered,ES,969,120,36,False,849,True
+SHIP-1127,WH-Lille,Product-C,261,2024-06-14,2024-06-24,Pending,ES,854,494,10,False,360,True
+SHIP-1128,WH-Lille,Product-E,75,2024-04-30,2024-05-16,Delayed,DE,943,613,16,False,330,True
+SHIP-1129,WH-Paris,Product-C,396,2024-05-10,2024-05-19,Delayed,IT,956,806,9,False,150,True
+SHIP-1130,WH-Paris,Product-C,372,2024-05-09,2024-05-27,Pending,BE,593,675,18,False,82,True
+SHIP-1131,WH-Lille,Product-E,248,2024-05-05,2024-05-15,Pending,IT,565,781,10,False,216,True
+SHIP-1132,WH-Lille,Product-C,446,2024-05-19,2024-06-13,In Transit,DE,585,392,25,False,193,True
+SHIP-1133,WH-Paris,Product-C,382,2024-02-29,2024-03-27,Delayed,ES,395,679,27,False,284,True
+SHIP-1134,WH-Lille,Product-A,65,2024-06-15,2024-06-25,Cancelled,BE,339,890,10,False,551,True
+SHIP-1135,WH-Paris,Product-E,467,2024-01-26,2024-02-24,Delayed,FR,739,147,29,False,592,True
+SHIP-1136,WH-Lyon,Product-A,241,2024-04-14,2024-05-26,Pending,IT,638,709,42,False,71,True
+SHIP-1137,WH-Paris,Product-C,437,2024-04-11,2024-05-23,Cancelled,ES,977,324,42,False,653,True
+SHIP-1138,WH-Toulouse,Product-A,317,2024-06-09,2024-07-11,Delivered,DE,646,700,32,False,54,True
+SHIP-1139,WH-Paris,Product-D,51,2024-03-14,2024-03-29,Delivered,ES,170,710,15,False,540,True
+SHIP-1140,WH-Paris,Product-C,408,2024-03-17,2024-03-19,Delivered,IT,367,383,2,False,16,False
+SHIP-1141,WH-Lyon,Product-E,211,2024-04-20,2024-04-30,Cancelled,DE,174,179,10,False,5,False
+SHIP-1142,WH-Lille,Product-E,350,2024-01-21,2024-03-01,In Transit,ES,934,597,40,False,337,True
+SHIP-1143,WH-Lille,Product-C,236,2024-02-06,2024-02-21,Pending,FR,920,823,15,False,97,True
+SHIP-1144,WH-Toulouse,Product-B,38,2024-04-29,2024-05-18,Delayed,IT,601,306,19,False,295,True
+SHIP-1145,WH-Marseille,Product-D,433,2024-06-12,2024-07-10,Pending,DE,393,873,28,False,480,True
+SHIP-1146,WH-Lyon,Product-D,293,2024-05-03,2024-05-10,Pending,BE,302,716,7,False,414,True
+SHIP-1147,WH-Lille,Product-C,5,2024-03-16,2024-03-18,Cancelled,FR,932,620,2,False,312,True
+SHIP-1148,WH-Lyon,Product-E,411,2024-05-07,2024-05-26,Pending,DE,651,194,19,False,457,True
+SHIP-1149,WH-Lyon,Product-A,463,2024-06-07,2024-06-24,Delivered,IT,807,451,17,False,356,True
+SHIP-1150,WH-Marseille,Product-B,47,2024-01-09,2024-02-16,Pending,IT,765,425,38,False,340,True
+SHIP-1151,WH-Lyon,Product-E,449,2024-02-14,2024-02-27,Pending,BE,513,935,13,False,422,True
+SHIP-1152,WH-Marseille,Product-D,496,2024-03-10,2024-03-21,Pending,IT,823,117,11,False,706,True
+SHIP-1153,WH-Lyon,Product-B,441,2024-04-29,2024-05-04,Delayed,BE,374,92,5,False,282,True
+SHIP-1154,WH-Marseille,Product-E,64,2024-04-11,2024-04-12,Delayed,IT,688,766,1,False,78,True
+SHIP-1155,WH-Toulouse,Product-D,422,2024-06-21,2024-07-08,Pending,FR,691,239,17,False,452,True
+SHIP-1156,WH-Toulouse,Product-E,168,2024-04-30,2024-05-02,Cancelled,DE,663,64,2,False,599,True
+SHIP-1157,WH-Marseille,Product-D,60,2024-06-11,2024-07-11,In Transit,FR,968,38,30,False,930,True
+SHIP-1158,WH-Paris,Product-A,121,2024-03-18,2024-04-19,Cancelled,DE,397,464,32,False,67,True
+SHIP-1159,WH-Toulouse,Product-D,301,2024-04-04,2024-05-17,In Transit,ES,670,101,43,False,569,True
+SHIP-1160,WH-Lille,Product-C,17,2024-05-05,2024-06-14,Pending,DE,454,455,40,False,1,False
+SHIP-1161,WH-Paris,Product-C,279,2024-03-01,2024-03-25,Pending,FR,407,282,24,False,125,True
+SHIP-1162,WH-Lille,Product-A,340,2024-02-18,2024-02-26,In Transit,BE,994,21,8,False,973,True
+SHIP-1163,WH-Lyon,Product-B,403,2024-01-13,2024-02-04,Cancelled,DE,70,849,22,False,779,True
+SHIP-1164,WH-Toulouse,Product-B,417,2024-05-21,2024-06-04,In Transit,IT,792,151,14,False,641,True
+SHIP-1165,WH-Marseille,Product-B,67,2024-06-01,2024-06-02,Cancelled,IT,817,178,1,False,639,True
+SHIP-1166,WH-Paris,Product-B,8,2024-01-29,2024-03-12,Pending,DE,602,331,43,False,271,True
+SHIP-1167,WH-Marseille,Product-A,65,2024-01-05,2024-01-17,Delayed,BE,116,763,12,False,647,True
+SHIP-1168,WH-Lille,Product-C,263,2024-01-17,2024-02-17,Cancelled,FR,462,515,31,False,53,True
+SHIP-1169,WH-Paris,Product-E,155,2024-02-26,2024-04-06,Delayed,FR,62,490,40,False,428,True
+SHIP-1170,WH-Paris,Product-D,365,2024-04-12,2024-05-10,Delayed,FR,920,82,28,False,838,True
+SHIP-1171,WH-Lyon,Product-A,65,2024-03-23,2024-05-01,Pending,BE,648,599,39,False,49,False
+SHIP-1172,WH-Lille,Product-E,272,2024-05-20,2024-06-10,Pending,ES,517,619,21,False,102,True
+SHIP-1173,WH-Paris,Product-E,370,2024-04-20,2024-04-27,In Transit,ES,462,909,7,False,447,True
+SHIP-1174,WH-Marseille,Product-D,205,2024-02-28,2024-03-26,Delayed,FR,320,437,27,False,117,True
+SHIP-1175,WH-Marseille,Product-C,489,2024-03-21,2024-05-03,In Transit,ES,68,93,43,False,25,False
+SHIP-1176,WH-Lille,Product-A,382,2024-01-22,2024-01-28,Pending,DE,569,61,6,False,508,True
+SHIP-1177,WH-Toulouse,Product-C,344,2024-05-30,2024-07-05,Delivered,ES,362,894,36,False,532,True
+SHIP-1178,WH-Paris,Product-C,308,2024-06-19,2024-07-17,Pending,IT,106,591,28,False,485,True
+SHIP-1179,WH-Lyon,Product-D,115,2024-05-09,2024-05-23,Delivered,IT,865,569,14,False,296,True
+SHIP-1180,WH-Marseille,Product-E,116,2024-04-04,2024-04-12,Delayed,BE,997,785,8,False,212,True
+SHIP-1181,WH-Toulouse,Product-A,312,2024-06-08,2024-07-18,Pending,FR,184,279,40,False,95,True
+SHIP-1182,WH-Marseille,Product-C,4,2024-06-28,2024-07-18,In Transit,DE,579,673,20,False,94,True
+SHIP-1183,WH-Lyon,Product-A,47,2024-04-12,2024-04-17,Cancelled,DE,385,429,5,False,44,False
+SHIP-1184,WH-Lyon,Product-C,160,2024-04-26,2024-05-18,Pending,BE,610,86,22,False,524,True
+SHIP-1185,WH-Lyon,Product-E,26,2024-01-14,2024-01-24,Delivered,IT,453,677,10,False,224,True
+SHIP-1186,WH-Toulouse,Product-D,213,2024-04-18,2024-05-20,Pending,DE,773,524,32,False,249,True
+SHIP-1187,WH-Lille,Product-A,146,2024-01-30,2024-02-22,Cancelled,ES,539,683,23,False,144,True
+SHIP-1188,WH-Lyon,Product-D,307,2024-03-19,2024-03-22,Delivered,FR,209,308,3,False,99,True
+SHIP-1189,WH-Marseille,Product-C,168,2024-02-24,2024-03-04,Delivered,FR,509,764,9,False,255,True
+SHIP-1190,WH-Lyon,Product-D,273,2024-04-20,2024-05-02,In Transit,BE,572,853,12,False,281,True
+SHIP-1191,WH-Paris,Product-D,442,2024-06-20,2024-07-13,Delivered,ES,19,470,23,False,451,True
+SHIP-1192,WH-Toulouse,Product-D,294,2024-01-20,2024-02-10,Delayed,ES,296,117,21,False,179,True
+SHIP-1193,WH-Marseille,Product-B,411,2024-04-13,2024-04-15,Cancelled,ES,851,706,2,False,145,True
+SHIP-1194,WH-Lille,Product-A,125,2024-04-02,2024-04-08,Delayed,BE,410,536,6,False,126,True
+SHIP-1195,WH-Marseille,Product-C,114,2024-01-21,2024-02-16,Pending,DE,78,522,26,False,444,True
+SHIP-1196,WH-Toulouse,Product-E,100,2024-06-11,2024-06-19,Pending,IT,744,981,8,False,237,True
+SHIP-1197,WH-Lyon,Product-A,75,2024-06-14,2024-06-24,Pending,DE,177,616,10,False,439,True
+SHIP-1198,WH-Paris,Product-B,488,2024-02-09,2024-03-22,Delayed,ES,772,577,42,False,195,True
+SHIP-1199,WH-Toulouse,Product-E,166,2024-05-28,2024-06-26,Pending,DE,450,69,29,False,381,True
+SHIP-1200,WH-Marseille,Product-C,303,2024-04-30,2024-05-29,Delivered,IT,519,75,29,False,444,True
+SHIP-1201,WH-Lille,Product-A,30,2024-03-20,2024-04-19,Pending,IT,78,660,30,False,582,True
+SHIP-1202,WH-Toulouse,Product-E,197,2024-01-24,2024-03-04,Delayed,BE,567,977,40,False,410,True
+SHIP-1203,WH-Toulouse,Product-B,165,2024-01-11,2024-02-09,Cancelled,ES,513,154,29,False,359,True
+SHIP-1204,WH-Paris,Product-C,366,2024-01-16,2024-02-14,Delivered,BE,661,176,29,False,485,True
+SHIP-1205,WH-Lille,Product-D,269,2024-01-11,2024-01-27,Cancelled,BE,162,372,16,False,210,True
+SHIP-1206,WH-Lille,Product-D,397,2024-04-05,2024-04-24,Pending,BE,53,808,19,False,755,True
+SHIP-1207,WH-Marseille,Product-A,169,2024-06-10,2024-07-22,Delivered,BE,694,395,42,False,299,True
+SHIP-1208,WH-Toulouse,Product-B,171,2024-03-13,2024-03-30,Delivered,BE,679,144,17,False,535,True
+SHIP-1209,WH-Lille,Product-B,305,2024-03-30,2024-04-19,Delivered,IT,572,385,20,False,187,True
+SHIP-1210,WH-Lyon,Product-E,48,2024-06-13,2024-07-05,Delayed,BE,370,18,22,False,352,True
+SHIP-1211,WH-Lyon,Product-B,175,2024-04-02,2024-04-22,Delayed,DE,231,140,20,False,91,True
+SHIP-1212,WH-Marseille,Product-A,260,2024-02-09,2024-02-14,Cancelled,BE,38,677,5,False,639,True
+SHIP-1213,WH-Lyon,Product-E,193,2024-03-27,2024-05-06,In Transit,DE,185,851,40,False,666,True
+SHIP-1214,WH-Lyon,Product-D,23,2024-06-26,2024-08-05,Delayed,IT,692,736,40,False,44,False
+SHIP-1215,WH-Toulouse,Product-C,386,2024-03-01,2024-03-30,Delayed,DE,546,244,29,False,302,True
+SHIP-1216,WH-Lyon,Product-C,348,2024-03-20,2024-04-20,Cancelled,ES,472,787,31,False,315,True
+SHIP-1217,WH-Toulouse,Product-E,215,2024-03-13,2024-04-07,In Transit,DE,820,619,25,False,201,True
+SHIP-1218,WH-Paris,Product-D,448,2024-02-05,2024-02-22,Pending,BE,956,105,17,False,851,True
+SHIP-1219,WH-Marseille,Product-A,391,2024-05-12,2024-05-20,In Transit,IT,460,927,8,False,467,True
+SHIP-1220,WH-Lille,Product-A,485,2024-05-11,2024-05-21,In Transit,ES,905,357,10,False,548,True
+SHIP-1221,WH-Paris,Product-D,258,2024-01-07,2024-02-03,Pending,DE,395,83,27,False,312,True
+SHIP-1222,WH-Paris,Product-C,477,2024-04-05,2024-04-20,Delivered,IT,810,149,15,False,661,True
+SHIP-1223,WH-Marseille,Product-D,357,2024-02-05,2024-02-08,In Transit,ES,459,630,3,False,171,True
+SHIP-1224,WH-Paris,Product-C,111,2024-01-02,2024-01-08,In Transit,BE,962,744,6,False,218,True
+SHIP-1225,WH-Lille,Product-A,398,2024-06-04,2024-07-08,Pending,DE,308,124,34,False,184,True
+SHIP-1226,WH-Lille,Product-E,235,2024-01-13,2024-01-29,Delivered,FR,856,926,16,False,70,True
+SHIP-1227,WH-Toulouse,Product-A,324,2024-05-07,2024-06-15,Cancelled,BE,247,735,39,False,488,True
+SHIP-1228,WH-Lille,Product-A,315,2024-02-06,2024-02-25,Pending,DE,584,426,19,False,158,True
+SHIP-1229,WH-Paris,Product-E,500,2024-02-17,2024-03-31,Pending,FR,976,538,43,False,438,True
+SHIP-1230,WH-Toulouse,Product-E,11,2024-05-19,2024-06-21,Delayed,ES,44,650,33,False,606,True
+SHIP-1231,WH-Marseille,Product-A,183,2024-04-09,2024-05-03,Delivered,IT,246,750,24,False,504,True
+SHIP-1232,WH-Paris,Product-E,377,2024-06-17,2024-07-28,Pending,DE,45,360,41,False,315,True
+SHIP-1233,WH-Lyon,Product-D,357,2024-05-19,2024-06-10,Delayed,DE,830,138,22,False,692,True
+SHIP-1234,WH-Paris,Product-C,104,2024-01-17,2024-02-16,Delivered,DE,907,42,30,False,865,True
+SHIP-1235,WH-Toulouse,Product-D,418,2024-03-21,2024-04-10,Cancelled,ES,259,37,20,False,222,True
+SHIP-1236,WH-Marseille,Product-C,442,2024-06-14,2024-06-27,Delivered,IT,279,127,13,False,152,True
+SHIP-1237,WH-Lille,Product-D,459,2024-04-04,2024-05-02,Delayed,IT,997,191,28,False,806,True
+SHIP-1238,WH-Lille,Product-C,474,2024-05-07,2024-06-21,Cancelled,IT,820,84,45,False,736,True
+SHIP-1239,WH-Lille,Product-E,422,2024-04-18,2024-04-24,In Transit,BE,300,328,6,False,28,False
+SHIP-1240,WH-Marseille,Product-C,157,2024-01-27,2024-02-02,Delayed,BE,734,436,6,False,298,True
+SHIP-1241,WH-Lille,Product-C,229,2024-02-12,2024-03-28,Delivered,IT,629,445,45,False,184,True
+SHIP-1242,WH-Paris,Product-A,344,2024-03-11,2024-04-21,Delayed,IT,525,820,41,False,295,True
+SHIP-1243,WH-Paris,Product-B,435,2024-06-22,2024-07-03,Cancelled,ES,35,129,11,False,94,True
+SHIP-1244,WH-Marseille,Product-C,197,2024-01-18,2024-02-03,Cancelled,FR,619,157,16,False,462,True
+SHIP-1245,WH-Marseille,Product-C,228,2024-06-22,2024-07-21,Delivered,BE,140,542,29,False,402,True
+SHIP-1246,WH-Marseille,Product-C,128,2024-04-03,2024-04-29,Delivered,FR,753,190,26,False,563,True
+SHIP-1247,WH-Lille,Product-E,61,2024-05-07,2024-06-10,Pending,IT,720,456,34,False,264,True
+SHIP-1248,WH-Marseille,Product-D,103,2024-02-24,2024-04-04,Delivered,DE,873,75,40,False,798,True
+SHIP-1249,WH-Lille,Product-A,415,2024-04-25,2024-05-07,Pending,IT,726,66,12,False,660,True
+SHIP-1250,WH-Marseille,Product-C,436,2024-05-20,2024-06-24,In Transit,DE,812,370,35,False,442,True
+SHIP-1251,WH-Paris,Product-B,406,2024-05-10,2024-05-25,In Transit,DE,809,505,15,False,304,True
+SHIP-1252,WH-Toulouse,Product-E,189,2024-01-07,2024-01-31,Delayed,BE,132,626,24,False,494,True
+SHIP-1253,WH-Marseille,Product-D,368,2024-01-23,2024-01-28,Delayed,BE,420,787,5,False,367,True
+SHIP-1254,WH-Paris,Product-B,498,2024-04-14,2024-05-21,Pending,FR,460,477,37,False,17,False
+SHIP-1255,WH-Marseille,Product-B,450,2024-06-23,2024-07-27,Cancelled,BE,186,786,34,False,600,True
+SHIP-1256,WH-Toulouse,Product-A,426,2024-02-03,2024-03-02,Delivered,BE,156,311,28,False,155,True
+SHIP-1257,WH-Marseille,Product-B,178,2024-02-12,2024-02-23,Cancelled,IT,866,80,11,False,786,True
+SHIP-1258,WH-Toulouse,Product-C,65,2024-03-05,2024-03-18,Pending,BE,546,95,13,False,451,True
+SHIP-1259,WH-Lyon,Product-E,483,2024-05-08,2024-06-19,Cancelled,DE,175,674,42,False,499,True
+SHIP-1260,WH-Marseille,Product-E,22,2024-06-08,2024-07-17,Delivered,FR,46,971,39,False,925,True
+SHIP-1261,WH-Marseille,Product-B,393,2024-06-13,2024-07-20,Cancelled,ES,632,654,37,False,22,False
+SHIP-1262,WH-Toulouse,Product-C,329,2024-01-08,2024-02-09,Pending,ES,250,824,32,False,574,True
+SHIP-1263,WH-Marseille,Product-D,38,2024-06-24,2024-07-20,Delivered,DE,450,425,26,False,25,False
+SHIP-1264,WH-Lyon,Product-C,311,2024-05-03,2024-06-02,In Transit,IT,882,735,30,False,147,True
+SHIP-1265,WH-Lille,Product-B,390,2024-03-22,2024-04-14,Pending,BE,575,108,23,False,467,True
+SHIP-1266,WH-Lille,Product-A,137,2024-03-22,2024-04-07,Delayed,DE,144,99,16,False,45,False
+SHIP-1267,WH-Lille,Product-E,215,2024-01-13,2024-02-01,In Transit,DE,833,335,19,False,498,True
+SHIP-1268,WH-Lyon,Product-B,256,2024-05-27,2024-06-17,Cancelled,ES,510,900,21,False,390,True
+SHIP-1269,WH-Paris,Product-A,484,2024-03-19,2024-04-20,Delayed,BE,468,989,32,False,521,True
+SHIP-1270,WH-Toulouse,Product-C,25,2024-03-02,2024-03-16,Delivered,IT,506,611,14,False,105,True
+SHIP-1271,WH-Lille,Product-C,275,2024-06-16,2024-07-30,Delivered,FR,441,137,44,False,304,True
+SHIP-1272,WH-Lille,Product-C,24,2024-03-08,2024-04-01,Delayed,FR,583,575,24,False,8,False
+SHIP-1273,WH-Toulouse,Product-C,38,2024-02-19,2024-03-14,Delayed,BE,461,782,24,False,321,True
+SHIP-1274,WH-Toulouse,Product-E,61,2024-05-20,2024-06-07,In Transit,FR,403,382,18,False,21,False
+SHIP-1275,WH-Marseille,Product-B,102,2024-03-27,2024-05-02,Cancelled,BE,411,512,36,False,101,True
+SHIP-1276,WH-Paris,Product-B,366,2024-01-11,2024-01-14,Pending,ES,531,467,3,False,64,True
+SHIP-1277,WH-Toulouse,Product-B,168,2024-02-08,2024-03-18,Cancelled,IT,166,402,39,False,236,True
+SHIP-1278,WH-Toulouse,Product-C,260,2024-06-06,2024-06-26,Cancelled,BE,501,725,20,False,224,True
+SHIP-1279,WH-Lille,Product-A,189,2024-05-24,2024-06-13,Pending,FR,426,597,20,False,171,True
+SHIP-1280,WH-Paris,Product-E,243,2024-03-19,2024-05-03,Pending,BE,591,233,45,False,358,True
+SHIP-1281,WH-Lille,Product-B,269,2024-01-14,2024-02-21,Cancelled,ES,151,841,38,False,690,True
+SHIP-1282,WH-Paris,Product-E,486,2024-06-23,2024-07-09,Delivered,DE,19,451,16,False,432,True
+SHIP-1283,WH-Lyon,Product-D,354,2024-03-21,2024-04-17,In Transit,ES,513,793,27,False,280,True
+SHIP-1284,WH-Paris,Product-B,266,2024-06-05,2024-07-06,In Transit,BE,332,678,31,False,346,True
+SHIP-1285,WH-Lille,Product-C,490,2024-05-02,2024-06-05,In Transit,ES,934,545,34,False,389,True
+SHIP-1286,WH-Marseille,Product-C,313,2024-03-28,2024-05-02,Delayed,DE,980,252,35,False,728,True
+SHIP-1287,WH-Marseille,Product-B,483,2024-03-12,2024-04-17,Pending,IT,721,212,36,False,509,True
+SHIP-1288,WH-Marseille,Product-D,179,2024-06-25,2024-07-27,Cancelled,IT,294,124,32,False,170,True
+SHIP-1289,WH-Toulouse,Product-D,459,2024-05-26,2024-07-09,Delayed,IT,977,791,44,False,186,True
+SHIP-1290,WH-Paris,Product-C,490,2024-02-07,2024-02-26,Delivered,IT,946,452,19,False,494,True
+SHIP-1291,WH-Lille,Product-B,104,2024-06-16,2024-07-03,Cancelled,IT,955,575,17,False,380,True
+SHIP-1292,WH-Lyon,Product-A,316,2024-06-27,2024-07-15,Cancelled,DE,248,51,18,False,197,True
+SHIP-1293,WH-Lyon,Product-B,27,2024-06-20,2024-07-24,Delivered,ES,338,734,34,False,396,True
+SHIP-1294,WH-Lyon,Product-A,494,2024-04-30,2024-05-07,Cancelled,DE,416,668,7,False,252,True
+SHIP-1295,WH-Lyon,Product-C,165,2024-05-01,2024-06-01,Pending,FR,929,787,31,False,142,True
+SHIP-1296,WH-Toulouse,Product-B,274,2024-01-23,2024-03-05,Delivered,DE,427,903,42,False,476,True
+SHIP-1297,WH-Lille,Product-D,96,2024-02-15,2024-02-18,Pending,FR,9,305,3,False,296,True
+SHIP-1298,WH-Paris,Product-C,146,2024-05-25,2024-07-03,Delayed,BE,536,505,39,False,31,False
+SHIP-1299,WH-Lille,Product-C,99,2024-02-04,2024-03-08,Delivered,IT,166,748,33,False,582,True
+SHIP-1300,WH-Marseille,Product-B,8,2024-04-27,2024-06-08,Pending,IT,581,690,42,False,109,True
+SHIP-1301,WH-Toulouse,Product-D,424,2024-02-19,2024-03-02,Delayed,BE,335,88,12,False,247,True
+SHIP-1302,WH-Paris,Product-B,72,2024-04-12,2024-05-25,Delayed,IT,958,254,43,False,704,True
+SHIP-1303,WH-Lille,Product-B,229,2024-01-02,2024-01-19,Pending,IT,309,596,17,False,287,True
+SHIP-1304,WH-Marseille,Product-C,355,2024-05-26,2024-05-27,In Transit,FR,683,121,1,False,562,True
+SHIP-1305,WH-Lyon,Product-D,352,2024-04-29,2024-05-19,Cancelled,IT,706,120,20,False,586,True
+SHIP-1306,WH-Marseille,Product-E,114,2024-06-12,2024-07-01,In Transit,DE,489,156,19,False,333,True
+SHIP-1307,WH-Marseille,Product-D,360,2024-04-26,2024-06-04,Cancelled,ES,775,550,39,False,225,True
+SHIP-1308,WH-Lyon,Product-E,448,2024-06-19,2024-07-03,Delivered,BE,457,540,14,False,83,True
+SHIP-1309,WH-Toulouse,Product-A,32,2024-04-02,2024-04-07,Cancelled,BE,207,586,5,False,379,True
+SHIP-1310,WH-Lyon,Product-C,438,2024-05-17,2024-05-27,Cancelled,ES,119,696,10,False,577,True
+SHIP-1311,WH-Lille,Product-A,461,2024-02-22,2024-03-31,Cancelled,ES,828,56,38,False,772,True
+SHIP-1312,WH-Toulouse,Product-D,234,2024-04-26,2024-05-05,Cancelled,FR,572,473,9,False,99,True
+SHIP-1313,WH-Paris,Product-D,131,2024-06-21,2024-07-11,Delivered,DE,592,74,20,False,518,True
+SHIP-1314,WH-Marseille,Product-A,278,2024-01-12,2024-02-09,Delivered,FR,956,483,28,False,473,True
+SHIP-1315,WH-Lille,Product-B,394,2024-01-09,2024-01-28,In Transit,ES,383,912,19,False,529,True
+SHIP-1316,WH-Lille,Product-D,42,2024-04-07,2024-05-06,Cancelled,DE,669,880,29,False,211,True
+SHIP-1317,WH-Lyon,Product-E,202,2024-03-30,2024-04-07,Cancelled,DE,745,228,8,False,517,True
+SHIP-1318,WH-Marseille,Product-D,345,2024-01-01,2024-01-03,Cancelled,ES,544,388,2,False,156,True
+SHIP-1319,WH-Lille,Product-C,80,2024-02-28,2024-03-15,Pending,DE,959,896,16,False,63,True
+SHIP-1320,WH-Lille,Product-E,393,2024-01-29,2024-02-01,Delivered,DE,211,68,3,False,143,True
+SHIP-1321,WH-Paris,Product-D,307,2024-01-26,2024-03-05,Delivered,DE,758,45,39,False,713,True
+SHIP-1322,WH-Lyon,Product-E,112,2024-04-12,2024-05-11,Delivered,DE,515,296,29,False,219,True
+SHIP-1323,WH-Marseille,Product-E,307,2024-02-29,2024-04-06,Pending,DE,309,897,37,False,588,True
+SHIP-1324,WH-Toulouse,Product-B,212,2024-02-06,2024-03-20,Pending,IT,62,570,43,False,508,True
+SHIP-1325,WH-Lille,Product-E,254,2024-05-31,2024-06-12,Delivered,IT,964,658,12,False,306,True
+SHIP-1326,WH-Toulouse,Product-C,357,2024-06-20,2024-07-15,Delayed,ES,152,307,25,False,155,True
+SHIP-1327,WH-Toulouse,Product-D,124,2024-04-06,2024-04-18,In Transit,IT,878,724,12,False,154,True
+SHIP-1328,WH-Paris,Product-E,212,2024-02-06,2024-03-07,Delayed,BE,542,137,30,False,405,True
+SHIP-1329,WH-Marseille,Product-B,170,2024-04-09,2024-04-25,Delivered,ES,867,379,16,False,488,True
+SHIP-1330,WH-Lyon,Product-A,138,2024-01-24,2024-02-28,Delayed,BE,617,40,35,False,577,True
+SHIP-1331,WH-Toulouse,Product-E,112,2024-01-19,2024-02-01,Delayed,DE,890,928,13,False,38,False
+SHIP-1332,WH-Paris,Product-B,480,2024-03-26,2024-04-15,In Transit,FR,764,772,20,False,8,False
+SHIP-1333,WH-Toulouse,Product-B,204,2024-05-02,2024-05-18,In Transit,BE,329,794,16,False,465,True
+SHIP-1334,WH-Lille,Product-E,333,2024-03-13,2024-04-07,Pending,IT,267,368,25,False,101,True
+SHIP-1335,WH-Lille,Product-A,412,2024-05-11,2024-06-12,Delayed,IT,936,208,32,False,728,True
+SHIP-1336,WH-Lille,Product-A,289,2024-04-04,2024-04-25,In Transit,DE,16,267,21,False,251,True
+SHIP-1337,WH-Toulouse,Product-D,152,2024-05-21,2024-06-28,In Transit,DE,337,235,38,False,102,True
+SHIP-1338,WH-Lyon,Product-D,282,2024-04-07,2024-05-14,Pending,IT,781,841,37,False,60,True
+SHIP-1339,WH-Lille,Product-D,87,2024-05-05,2024-06-16,Pending,DE,143,737,42,False,594,True
+SHIP-1340,WH-Lyon,Product-E,329,2024-05-19,2024-06-20,Delivered,BE,34,859,32,False,825,True
+SHIP-1341,WH-Paris,Product-A,212,2024-01-20,2024-03-03,In Transit,DE,69,724,43,False,655,True
+SHIP-1342,WH-Lyon,Product-E,234,2024-02-08,2024-02-09,Pending,FR,632,653,1,False,21,False
+SHIP-1343,WH-Lille,Product-D,9,2024-06-19,2024-07-29,Delivered,BE,564,421,40,False,143,True
+SHIP-1344,WH-Toulouse,Product-C,275,2024-01-04,2024-01-06,Pending,FR,514,832,2,False,318,True
+SHIP-1345,WH-Lille,Product-B,55,2024-06-27,2024-08-10,Delivered,BE,152,246,44,False,94,True
+SHIP-1346,WH-Toulouse,Product-C,418,2024-02-19,2024-03-30,Pending,IT,814,406,40,False,408,True
+SHIP-1347,WH-Lille,Product-D,290,2024-01-21,2024-02-14,In Transit,DE,307,700,24,False,393,True
+SHIP-1348,WH-Paris,Product-A,208,2024-01-21,2024-03-03,Delayed,ES,565,487,42,False,78,True
+SHIP-1349,WH-Paris,Product-B,43,2024-01-15,2024-02-25,Delayed,ES,660,803,41,False,143,True
+SHIP-1350,WH-Paris,Product-E,471,2024-03-25,2024-05-01,Delivered,DE,216,922,37,False,706,True
+SHIP-1351,WH-Lille,Product-C,24,2024-06-26,2024-08-02,Delivered,IT,920,556,37,False,364,True
+SHIP-1352,WH-Paris,Product-B,476,2024-05-24,2024-07-06,Pending,FR,984,212,43,False,772,True
+SHIP-1353,WH-Lille,Product-A,154,2024-05-30,2024-06-09,In Transit,BE,246,580,10,False,334,True
+SHIP-1354,WH-Toulouse,Product-C,197,2024-04-09,2024-05-23,In Transit,FR,512,763,44,False,251,True
+SHIP-1355,WH-Paris,Product-D,119,2024-03-29,2024-04-02,Delivered,IT,619,787,4,False,168,True
+SHIP-1356,WH-Lille,Product-C,16,2024-06-06,2024-07-15,Pending,ES,502,233,39,False,269,True
+SHIP-1357,WH-Lille,Product-D,96,2024-04-01,2024-05-07,Cancelled,ES,87,790,36,False,703,True
+SHIP-1358,WH-Lyon,Product-A,43,2024-06-07,2024-06-26,Pending,DE,389,728,19,False,339,True
+SHIP-1359,WH-Lille,Product-C,185,2024-06-11,2024-06-21,Delivered,FR,5,965,10,False,960,True
+SHIP-1360,WH-Marseille,Product-C,53,2024-03-19,2024-04-17,In Transit,FR,191,441,29,False,250,True
+SHIP-1361,WH-Toulouse,Product-E,209,2024-04-24,2024-05-30,Delivered,FR,91,362,36,False,271,True
+SHIP-1362,WH-Toulouse,Product-E,402,2024-05-21,2024-05-27,Pending,ES,12,298,6,False,286,True
+SHIP-1363,WH-Paris,Product-E,464,2024-04-15,2024-05-10,In Transit,BE,533,173,25,False,360,True
+SHIP-1364,WH-Lyon,Product-B,138,2024-06-24,2024-07-19,Pending,IT,504,149,25,False,355,True
+SHIP-1365,WH-Lille,Product-C,216,2024-01-17,2024-01-28,Pending,ES,801,78,11,False,723,True
+SHIP-1366,WH-Lyon,Product-D,305,2024-04-02,2024-04-19,Cancelled,DE,468,109,17,False,359,True
+SHIP-1367,WH-Paris,Product-D,171,2024-02-04,2024-02-24,Cancelled,ES,823,882,20,False,59,True
+SHIP-1368,WH-Marseille,Product-D,418,2024-03-25,2024-04-23,Cancelled,DE,307,328,29,False,21,False
+SHIP-1369,WH-Lyon,Product-D,161,2024-06-03,2024-07-18,In Transit,ES,991,326,45,False,665,True
+SHIP-1370,WH-Lille,Product-E,401,2024-03-15,2024-04-29,In Transit,IT,385,287,45,False,98,True
+SHIP-1371,WH-Paris,Product-E,103,2024-04-10,2024-05-04,Cancelled,BE,184,698,24,False,514,True
+SHIP-1372,WH-Lille,Product-B,225,2024-05-20,2024-05-22,Pending,FR,838,868,2,False,30,False
+SHIP-1373,WH-Lille,Product-B,325,2024-04-14,2024-05-28,Pending,DE,258,674,44,False,416,True
+SHIP-1374,WH-Lille,Product-A,230,2024-02-09,2024-03-08,Cancelled,ES,596,410,28,False,186,True
+SHIP-1375,WH-Lille,Product-E,19,2024-05-16,2024-06-18,Pending,BE,608,653,33,False,45,False
+SHIP-1376,WH-Lyon,Product-C,86,2024-01-22,2024-01-29,Cancelled,FR,576,660,7,False,84,True
+SHIP-1377,WH-Lille,Product-C,495,2024-06-22,2024-08-03,Delayed,FR,10,100,42,False,90,True
+SHIP-1378,WH-Toulouse,Product-E,286,2024-03-07,2024-03-22,Cancelled,BE,226,456,15,False,230,True
+SHIP-1379,WH-Lille,Product-E,354,2024-04-05,2024-05-01,Cancelled,DE,353,25,26,False,328,True
+SHIP-1380,WH-Marseille,Product-D,472,2024-05-03,2024-05-10,Delivered,FR,851,963,7,False,112,True
+SHIP-1381,WH-Marseille,Product-C,234,2024-02-06,2024-02-29,In Transit,BE,494,356,23,False,138,True
+SHIP-1382,WH-Lille,Product-D,164,2024-05-01,2024-05-08,Delivered,IT,45,829,7,False,784,True
+SHIP-1383,WH-Marseille,Product-A,347,2024-01-30,2024-02-01,In Transit,DE,528,178,2,False,350,True
+SHIP-1384,WH-Marseille,Product-E,219,2024-05-21,2024-06-01,Delayed,DE,816,414,11,False,402,True
+SHIP-1385,WH-Lyon,Product-D,203,2024-06-10,2024-06-22,Delivered,BE,904,202,12,False,702,True
+SHIP-1386,WH-Lille,Product-D,3,2024-04-25,2024-06-02,In Transit,DE,285,770,38,False,485,True
+SHIP-1387,WH-Paris,Product-E,96,2024-01-17,2024-02-23,Pending,IT,201,468,37,False,267,True
+SHIP-1388,WH-Lille,Product-E,495,2024-01-30,2024-02-16,Pending,BE,397,625,17,False,228,True
+SHIP-1389,WH-Paris,Product-C,181,2024-04-10,2024-05-18,Delayed,BE,176,833,38,False,657,True
+SHIP-1390,WH-Toulouse,Product-E,44,2024-06-21,2024-07-11,In Transit,IT,120,244,20,False,124,True
+SHIP-1391,WH-Lyon,Product-C,356,2024-03-19,2024-03-27,In Transit,BE,397,428,8,False,31,False
+SHIP-1392,WH-Toulouse,Product-D,217,2024-06-01,2024-06-10,In Transit,ES,650,550,9,False,100,True
+SHIP-1393,WH-Lyon,Product-E,86,2024-06-26,2024-08-07,Delayed,IT,143,191,42,False,48,False
+SHIP-1394,WH-Toulouse,Product-A,444,2024-03-21,2024-04-19,Pending,FR,496,139,29,False,357,True
+SHIP-1395,WH-Toulouse,Product-E,335,2024-02-19,2024-03-15,Delayed,ES,701,503,25,False,198,True
+SHIP-1396,WH-Lille,Product-B,43,2024-04-16,2024-05-15,Cancelled,FR,814,779,29,False,35,False
+SHIP-1397,WH-Paris,Product-C,116,2024-02-26,2024-03-16,Cancelled,IT,172,799,19,False,627,True
+SHIP-1398,WH-Lille,Product-E,262,2024-04-27,2024-06-03,Delivered,BE,116,274,37,False,158,True
+SHIP-1399,WH-Toulouse,Product-A,390,2024-05-19,2024-06-12,Delayed,BE,223,435,24,False,212,True
+SHIP-1400,WH-Lyon,Product-C,448,2024-01-27,2024-03-09,Delivered,ES,269,356,42,False,87,True
+SHIP-1401,WH-Paris,Product-B,108,2024-01-23,2024-02-21,Cancelled,IT,881,727,29,False,154,True
+SHIP-1402,WH-Lille,Product-B,316,2024-06-05,2024-07-16,In Transit,DE,833,211,41,False,622,True
+SHIP-1403,WH-Marseille,Product-E,144,2024-01-16,2024-02-22,Cancelled,BE,172,331,37,False,159,True
+SHIP-1404,WH-Toulouse,Product-C,488,2024-03-15,2024-04-03,Cancelled,FR,138,985,19,False,847,True
+SHIP-1405,WH-Marseille,Product-B,360,2024-04-15,2024-04-19,In Transit,DE,149,728,4,False,579,True
+SHIP-1406,WH-Lille,Product-D,73,2024-03-23,2024-04-08,Cancelled,IT,642,424,16,False,218,True
+SHIP-1407,WH-Paris,Product-A,207,2024-04-06,2024-05-05,Cancelled,IT,711,958,29,False,247,True
+SHIP-1408,WH-Lille,Product-C,298,2024-04-04,2024-05-04,Delivered,FR,748,995,30,False,247,True
+SHIP-1409,WH-Marseille,Product-A,408,2024-04-27,2024-06-07,Cancelled,ES,223,991,41,False,768,True
+SHIP-1410,WH-Lille,Product-C,166,2024-04-19,2024-05-03,Pending,IT,560,591,14,False,31,False
+SHIP-1411,WH-Lille,Product-C,458,2024-02-03,2024-03-11,Delivered,FR,101,641,37,False,540,True
+SHIP-1412,WH-Paris,Product-B,226,2024-04-27,2024-04-29,Delayed,FR,981,438,2,False,543,True
+SHIP-1413,WH-Lyon,Product-C,82,2024-02-21,2024-04-06,Pending,FR,670,369,45,False,301,True
+SHIP-1414,WH-Marseille,Product-B,27,2024-03-05,2024-03-11,Delayed,IT,743,716,6,False,27,False
+SHIP-1415,WH-Paris,Product-A,1,2024-02-29,2024-03-28,In Transit,ES,79,135,28,False,56,True
+SHIP-1416,WH-Toulouse,Product-D,5,2024-05-31,2024-06-15,Delivered,IT,836,123,15,False,713,True
+SHIP-1417,WH-Lyon,Product-D,37,2024-04-18,2024-06-02,In Transit,ES,91,748,45,False,657,True
+SHIP-1418,WH-Marseille,Product-C,452,2024-01-27,2024-02-03,Pending,DE,391,792,7,False,401,True
+SHIP-1419,WH-Lyon,Product-A,272,2024-02-04,2024-03-17,Cancelled,FR,624,665,42,False,41,False
+SHIP-1420,WH-Marseille,Product-B,322,2024-02-12,2024-03-12,In Transit,ES,630,703,29,False,73,True
+SHIP-1421,WH-Paris,Product-A,72,2024-04-23,2024-05-07,Delivered,BE,747,393,14,False,354,True
+SHIP-1422,WH-Marseille,Product-B,127,2024-03-30,2024-04-27,Pending,FR,254,566,28,False,312,True
+SHIP-1423,WH-Toulouse,Product-C,399,2024-06-02,2024-07-11,Delivered,IT,210,530,39,False,320,True
+SHIP-1424,WH-Lyon,Product-D,152,2024-06-04,2024-07-07,Delivered,DE,506,395,33,False,111,True
+SHIP-1425,WH-Lille,Product-E,37,2024-01-29,2024-02-14,Cancelled,FR,369,956,16,False,587,True
+SHIP-1426,WH-Lille,Product-E,216,2024-03-22,2024-03-31,Pending,BE,699,176,9,False,523,True
+SHIP-1427,WH-Paris,Product-E,35,2024-04-30,2024-05-05,Delivered,IT,220,40,5,False,180,True
+SHIP-1428,WH-Toulouse,Product-C,322,2024-01-16,2024-02-11,Cancelled,ES,433,718,26,False,285,True
+SHIP-1429,WH-Toulouse,Product-E,316,2024-04-12,2024-04-18,In Transit,IT,85,317,6,False,232,True
+SHIP-1430,WH-Lyon,Product-B,275,2024-01-21,2024-02-23,Pending,ES,600,649,33,False,49,False
+SHIP-1431,WH-Paris,Product-C,358,2024-06-15,2024-07-29,Delayed,DE,59,250,44,False,191,True
+SHIP-1432,WH-Paris,Product-D,314,2024-01-23,2024-02-20,Cancelled,FR,316,682,28,False,366,True
+SHIP-1433,WH-Paris,Product-A,363,2024-06-17,2024-06-29,In Transit,FR,167,508,12,False,341,True
+SHIP-1434,WH-Toulouse,Product-C,86,2024-03-29,2024-05-02,Pending,DE,767,799,34,False,32,False
+SHIP-1435,WH-Paris,Product-C,414,2024-03-09,2024-03-17,Delayed,IT,536,65,8,False,471,True
+SHIP-1436,WH-Paris,Product-D,234,2024-03-08,2024-04-14,Cancelled,IT,56,511,37,False,455,True
+SHIP-1437,WH-Marseille,Product-B,131,2024-05-25,2024-06-05,Delivered,BE,690,740,11,False,50,False
+SHIP-1438,WH-Toulouse,Product-A,23,2024-01-30,2024-02-14,Delivered,DE,47,483,15,False,436,True
+SHIP-1439,WH-Lyon,Product-B,477,2024-04-03,2024-04-28,Delivered,BE,822,935,25,False,113,True
+SHIP-1440,WH-Lyon,Product-C,128,2024-06-16,2024-07-13,Delayed,IT,277,845,27,False,568,True
+SHIP-1441,WH-Marseille,Product-A,258,2024-01-20,2024-02-26,Delivered,DE,228,823,37,False,595,True
+SHIP-1442,WH-Lille,Product-A,450,2024-05-12,2024-05-15,Delayed,IT,792,865,3,False,73,True
+SHIP-1443,WH-Paris,Product-E,234,2024-03-20,2024-04-10,Delivered,IT,205,298,21,False,93,True
+SHIP-1444,WH-Toulouse,Product-B,238,2024-05-24,2024-06-13,Pending,BE,995,505,20,False,490,True
+SHIP-1445,WH-Lyon,Product-B,4,2024-02-20,2024-03-26,Delayed,FR,238,554,35,False,316,True
+SHIP-1446,WH-Paris,Product-C,1,2024-03-29,2024-05-09,Delayed,IT,106,210,41,False,104,True
+SHIP-1447,WH-Lille,Product-D,493,2024-05-15,2024-05-31,Delivered,DE,728,286,16,False,442,True
+SHIP-1448,WH-Lyon,Product-E,212,2024-01-24,2024-01-27,Pending,ES,997,765,3,False,232,True
+SHIP-1449,WH-Paris,Product-E,69,2024-01-22,2024-02-29,Delayed,FR,606,581,38,False,25,False
+SHIP-1450,WH-Lyon,Product-B,150,2024-01-16,2024-02-13,Pending,IT,948,820,28,False,128,True
+SHIP-1451,WH-Marseille,Product-C,232,2024-04-10,2024-05-25,Pending,DE,76,966,45,False,890,True
+SHIP-1452,WH-Toulouse,Product-A,80,2024-02-21,2024-03-01,Delivered,DE,460,477,9,False,17,False
+SHIP-1453,WH-Paris,Product-E,184,2024-03-21,2024-04-17,In Transit,ES,315,474,27,False,159,True
+SHIP-1454,WH-Paris,Product-B,414,2024-03-08,2024-03-16,Pending,BE,41,220,8,False,179,True
+SHIP-1455,WH-Paris,Product-B,496,2024-03-24,2024-04-03,Pending,ES,525,50,10,False,475,True
+SHIP-1456,WH-Marseille,Product-B,16,2024-06-22,2024-07-12,Delayed,ES,569,766,20,False,197,True
+SHIP-1457,WH-Paris,Product-D,53,2024-05-20,2024-06-05,In Transit,FR,12,63,16,False,51,True
+SHIP-1458,WH-Lyon,Product-D,191,2024-02-26,2024-03-06,Delivered,BE,600,265,9,False,335,True
+SHIP-1459,WH-Paris,Product-B,463,2024-01-20,2024-01-22,Delayed,DE,94,926,2,False,832,True
+SHIP-1460,WH-Paris,Product-D,26,2024-03-25,2024-04-02,In Transit,BE,443,841,8,False,398,True
+SHIP-1461,WH-Paris,Product-D,350,2024-04-11,2024-05-13,Delayed,DE,362,219,32,False,143,True
+SHIP-1462,WH-Marseille,Product-D,453,2024-02-17,2024-03-06,In Transit,FR,628,634,18,False,6,False
+SHIP-1463,WH-Marseille,Product-D,211,2024-06-06,2024-06-22,Cancelled,ES,62,89,16,False,27,False
+SHIP-1464,WH-Lyon,Product-D,103,2024-03-12,2024-04-06,Cancelled,DE,645,821,25,False,176,True
+SHIP-1465,WH-Lille,Product-C,246,2024-05-19,2024-05-21,Cancelled,ES,352,934,2,False,582,True
+SHIP-1466,WH-Marseille,Product-D,139,2024-05-24,2024-06-26,In Transit,FR,326,611,33,False,285,True
+SHIP-1467,WH-Marseille,Product-A,415,2024-02-26,2024-02-28,Delayed,BE,366,785,2,False,419,True
+SHIP-1468,WH-Lyon,Product-A,127,2024-05-29,2024-06-13,In Transit,IT,546,835,15,False,289,True
+SHIP-1469,WH-Toulouse,Product-D,182,2024-01-15,2024-01-30,In Transit,DE,242,606,15,False,364,True
+SHIP-1470,WH-Marseille,Product-E,15,2024-03-22,2024-05-06,Pending,BE,577,145,45,False,432,True
+SHIP-1471,WH-Lille,Product-E,159,2024-05-24,2024-06-06,In Transit,ES,38,92,13,False,54,True
+SHIP-1472,WH-Toulouse,Product-B,11,2024-01-15,2024-01-30,Cancelled,ES,0,339,15,False,339,True
+SHIP-1473,WH-Lyon,Product-C,368,2024-06-06,2024-06-19,In Transit,IT,60,22,13,False,38,False
+SHIP-1474,WH-Lyon,Product-A,434,2024-02-07,2024-03-16,Cancelled,IT,983,74,38,False,909,True
+SHIP-1475,WH-Lille,Product-E,52,2024-04-05,2024-05-18,Pending,IT,330,139,43,False,191,True
+SHIP-1476,WH-Lille,Product-C,90,2024-02-10,2024-03-09,Cancelled,BE,805,365,28,False,440,True
+SHIP-1477,WH-Toulouse,Product-B,194,2024-02-27,2024-04-10,Pending,IT,130,181,43,False,51,True
+SHIP-1478,WH-Toulouse,Product-D,436,2024-01-01,2024-02-15,Cancelled,FR,186,616,45,False,430,True
+SHIP-1479,WH-Lyon,Product-E,54,2024-03-22,2024-05-01,Delayed,DE,339,763,40,False,424,True
+SHIP-1480,WH-Marseille,Product-C,86,2024-01-20,2024-02-05,Delivered,IT,457,11,16,False,446,True
+SHIP-1481,WH-Lyon,Product-A,180,2024-03-08,2024-03-22,Pending,FR,737,1,14,False,736,True
+SHIP-1482,WH-Lille,Product-D,497,2024-01-13,2024-02-07,In Transit,ES,504,902,25,False,398,True
+SHIP-1483,WH-Toulouse,Product-D,52,2024-04-06,2024-04-29,Delayed,BE,666,776,23,False,110,True
+SHIP-1484,WH-Lyon,Product-D,38,2024-06-24,2024-07-09,Delivered,IT,20,326,15,False,306,True
+SHIP-1485,WH-Paris,Product-C,88,2024-03-07,2024-03-14,Delayed,DE,749,76,7,False,673,True
+SHIP-1486,WH-Marseille,Product-E,315,2024-05-20,2024-05-26,Delayed,FR,441,965,6,False,524,True
+SHIP-1487,WH-Toulouse,Product-D,81,2024-06-16,2024-06-27,Delivered,FR,339,210,11,False,129,True
+SHIP-1488,WH-Toulouse,Product-E,136,2024-02-18,2024-03-16,Pending,IT,243,98,27,False,145,True
+SHIP-1489,WH-Toulouse,Product-E,431,2024-01-13,2024-02-08,Delayed,DE,55,369,26,False,314,True
+SHIP-1490,WH-Paris,Product-C,422,2024-01-01,2024-01-29,Cancelled,ES,204,99,28,False,105,True
+SHIP-1491,WH-Lyon,Product-C,42,2024-01-07,2024-01-21,Delayed,FR,315,803,14,False,488,True
+SHIP-1492,WH-Lille,Product-C,47,2024-04-11,2024-05-12,Cancelled,ES,189,379,31,False,190,True
+SHIP-1493,WH-Lyon,Product-D,23,2024-04-07,2024-05-01,Pending,ES,476,269,24,False,207,True
+SHIP-1494,WH-Toulouse,Product-A,78,2024-02-27,2024-03-16,Delivered,FR,684,352,18,False,332,True
+SHIP-1495,WH-Toulouse,Product-B,284,2024-05-18,2024-06-14,Delivered,ES,838,535,27,False,303,True
+SHIP-1496,WH-Lille,Product-E,452,2024-04-17,2024-05-22,In Transit,ES,306,80,35,False,226,True
+SHIP-1497,WH-Toulouse,Product-E,462,2024-04-11,2024-04-14,Cancelled,BE,693,635,3,False,58,True
+SHIP-1498,WH-Lille,Product-B,486,2024-02-07,2024-02-15,In Transit,DE,827,197,8,False,630,True
+SHIP-1499,WH-Lille,Product-A,350,2024-02-02,2024-02-05,Delayed,DE,842,642,3,False,200,True
+SHIP-1500,WH-Marseille,Product-C,467,2024-02-07,2024-03-17,Delivered,FR,397,569,39,False,172,True
+SHIP-1501,WH-Marseille,Product-C,267,2024-04-11,2024-05-17,Delayed,FR,805,717,36,False,88,True
+SHIP-1502,WH-Toulouse,Product-D,58,2024-06-08,2024-07-16,Delayed,DE,151,580,38,False,429,True
+SHIP-1503,WH-Paris,Product-A,289,2024-05-30,2024-07-07,Delivered,IT,888,548,38,False,340,True
+SHIP-1504,WH-Marseille,Product-D,336,2024-03-29,2024-04-25,Delayed,BE,623,484,27,False,139,True
+SHIP-1505,WH-Marseille,Product-D,74,2024-01-10,2024-01-22,Cancelled,BE,697,710,12,False,13,False
+SHIP-1506,WH-Lille,Product-C,354,2024-04-12,2024-04-15,In Transit,FR,763,486,3,False,277,True
+SHIP-1507,WH-Paris,Product-C,419,2024-03-09,2024-04-02,Pending,IT,287,863,24,False,576,True
+SHIP-1508,WH-Paris,Product-B,69,2024-05-05,2024-06-19,Pending,ES,792,845,45,False,53,True
+SHIP-1509,WH-Lille,Product-E,331,2024-03-23,2024-04-10,Delivered,DE,452,216,18,False,236,True
+SHIP-1510,WH-Toulouse,Product-C,421,2024-04-14,2024-05-16,Delivered,BE,810,162,32,False,648,True
+SHIP-1511,WH-Toulouse,Product-D,70,2024-01-17,2024-02-06,Cancelled,BE,29,177,20,False,148,True
+SHIP-1512,WH-Paris,Product-B,17,2024-02-19,2024-03-03,Delayed,FR,940,369,13,False,571,True
+SHIP-1513,WH-Marseille,Product-D,259,2024-02-20,2024-03-09,Delayed,FR,697,31,18,False,666,True
+SHIP-1514,WH-Lille,Product-E,229,2024-03-02,2024-03-26,In Transit,ES,600,564,24,False,36,False
+SHIP-1515,WH-Lyon,Product-C,384,2024-03-30,2024-04-22,Delivered,IT,28,395,23,False,367,True
+SHIP-1516,WH-Toulouse,Product-B,439,2024-01-13,2024-01-24,In Transit,DE,693,211,11,False,482,True
+SHIP-1517,WH-Lille,Product-E,11,2024-03-09,2024-04-20,Delivered,ES,933,135,42,False,798,True
+SHIP-1518,WH-Toulouse,Product-A,115,2024-06-14,2024-06-26,Pending,BE,824,965,12,False,141,True
+SHIP-1519,WH-Marseille,Product-D,459,2024-03-19,2024-04-30,Delayed,IT,470,258,42,False,212,True
+SHIP-1520,WH-Marseille,Product-E,423,2024-02-25,2024-03-26,Cancelled,ES,598,104,30,False,494,True
+SHIP-1521,WH-Marseille,Product-E,332,2024-01-02,2024-02-04,Cancelled,BE,289,305,33,False,16,False
+SHIP-1522,WH-Lille,Product-A,173,2024-06-24,2024-07-01,Pending,IT,882,283,7,False,599,True
+SHIP-1523,WH-Marseille,Product-B,77,2024-03-07,2024-04-18,Cancelled,DE,921,58,42,False,863,True
+SHIP-1524,WH-Marseille,Product-B,370,2024-06-02,2024-06-28,Delivered,ES,302,265,26,False,37,False
+SHIP-1525,WH-Lille,Product-A,299,2024-04-17,2024-05-13,Cancelled,DE,351,743,26,False,392,True
+SHIP-1526,WH-Toulouse,Product-D,465,2024-02-26,2024-04-10,Pending,BE,307,865,44,False,558,True
+SHIP-1527,WH-Toulouse,Product-B,151,2024-02-13,2024-03-27,Delivered,ES,131,758,43,False,627,True
+SHIP-1528,WH-Lyon,Product-C,336,2024-03-07,2024-04-12,Delivered,DE,363,228,36,False,135,True
+SHIP-1529,WH-Marseille,Product-C,134,2024-03-19,2024-04-15,Cancelled,IT,474,871,27,False,397,True
+SHIP-1530,WH-Paris,Product-E,298,2024-01-31,2024-03-02,Cancelled,FR,483,910,31,False,427,True
+SHIP-1531,WH-Paris,Product-D,272,2024-02-19,2024-03-23,Pending,ES,55,891,33,False,836,True
+SHIP-1532,WH-Lyon,Product-C,210,2024-02-08,2024-02-17,Cancelled,ES,146,323,9,False,177,True
+SHIP-1533,WH-Lille,Product-C,324,2024-02-16,2024-02-22,In Transit,IT,649,59,6,False,590,True
+SHIP-1534,WH-Marseille,Product-B,390,2024-01-02,2024-01-31,In Transit,BE,782,162,29,False,620,True
+SHIP-1535,WH-Lyon,Product-E,223,2024-05-05,2024-05-11,Delayed,ES,439,988,6,False,549,True
+SHIP-1536,WH-Paris,Product-A,274,2024-05-02,2024-05-27,In Transit,IT,972,14,25,False,958,True
+SHIP-1537,WH-Lyon,Product-A,347,2024-03-23,2024-04-26,Delivered,DE,231,710,34,False,479,True
+SHIP-1538,WH-Lyon,Product-A,197,2024-03-29,2024-04-18,Cancelled,BE,313,171,20,False,142,True
+SHIP-1539,WH-Marseille,Product-C,234,2024-01-17,2024-01-20,Cancelled,BE,536,345,3,False,191,True
+SHIP-1540,WH-Lyon,Product-C,462,2024-04-21,2024-06-04,Delayed,IT,768,192,44,False,576,True
+SHIP-1541,WH-Paris,Product-B,115,2024-02-12,2024-03-09,In Transit,DE,751,22,26,False,729,True
+SHIP-1542,WH-Lyon,Product-A,188,2024-05-30,2024-07-02,Delivered,ES,897,655,33,False,242,True
+SHIP-1543,WH-Toulouse,Product-A,305,2024-03-06,2024-04-10,Delivered,FR,669,856,35,False,187,True
+SHIP-1544,WH-Paris,Product-D,228,2024-01-06,2024-01-10,Delayed,FR,560,258,4,False,302,True
+SHIP-1545,WH-Lyon,Product-B,356,2024-05-01,2024-06-15,Delivered,IT,430,677,45,False,247,True
+SHIP-1546,WH-Toulouse,Product-C,319,2024-01-26,2024-03-09,Cancelled,DE,428,850,43,False,422,True
+SHIP-1547,WH-Toulouse,Product-A,145,2024-01-27,2024-02-29,Delivered,FR,509,203,33,False,306,True
+SHIP-1548,WH-Marseille,Product-E,499,2024-06-04,2024-06-17,In Transit,IT,720,419,13,False,301,True
+SHIP-1549,WH-Paris,Product-E,255,2024-03-16,2024-03-27,In Transit,ES,338,240,11,False,98,True
+SHIP-1550,WH-Paris,Product-A,428,2024-01-01,2024-01-02,Cancelled,ES,152,972,1,False,820,True
+SHIP-1551,WH-Paris,Product-A,464,2024-01-24,2024-02-26,Pending,DE,467,1000,33,False,533,True
+SHIP-1552,WH-Lille,Product-A,52,2024-03-16,2024-04-02,In Transit,FR,872,297,17,False,575,True
+SHIP-1553,WH-Marseille,Product-D,379,2024-04-02,2024-05-16,Delivered,FR,871,776,44,False,95,True
+SHIP-1554,WH-Lyon,Product-B,169,2024-01-12,2024-01-13,Pending,ES,978,636,1,False,342,True
+SHIP-1555,WH-Marseille,Product-C,94,2024-03-09,2024-03-15,Delivered,ES,409,985,6,False,576,True
+SHIP-1556,WH-Lille,Product-D,410,2024-04-26,2024-05-14,Delayed,DE,115,135,18,False,20,False
+SHIP-1557,WH-Lyon,Product-A,214,2024-06-27,2024-07-01,Cancelled,ES,821,582,4,False,239,True
+SHIP-1558,WH-Lyon,Product-E,195,2024-06-22,2024-07-21,Pending,BE,29,883,29,False,854,True
+SHIP-1559,WH-Lille,Product-D,58,2024-06-24,2024-07-03,Delayed,ES,47,64,9,False,17,False
+SHIP-1560,WH-Marseille,Product-A,361,2024-03-07,2024-04-18,Cancelled,BE,741,578,42,False,163,True
+SHIP-1561,WH-Marseille,Product-E,268,2024-02-27,2024-04-10,Cancelled,FR,443,677,43,False,234,True
+SHIP-1562,WH-Marseille,Product-D,77,2024-03-04,2024-04-04,Cancelled,BE,55,11,31,False,44,False
+SHIP-1563,WH-Toulouse,Product-D,437,2024-06-13,2024-06-24,Delayed,DE,76,769,11,False,693,True
+SHIP-1564,WH-Lyon,Product-C,497,2024-05-05,2024-05-26,Pending,FR,519,228,21,False,291,True
+SHIP-1565,WH-Lille,Product-D,419,2024-05-20,2024-07-01,In Transit,FR,470,454,42,False,16,False
+SHIP-1566,WH-Paris,Product-D,229,2024-05-26,2024-06-24,Pending,FR,509,763,29,False,254,True
+SHIP-1567,WH-Paris,Product-D,212,2024-06-16,2024-06-18,Delivered,BE,562,0,2,False,562,True
+SHIP-1568,WH-Toulouse,Product-C,456,2024-01-24,2024-03-03,Cancelled,BE,211,670,39,False,459,True
+SHIP-1569,WH-Marseille,Product-C,423,2024-06-20,2024-07-20,Delivered,DE,864,465,30,False,399,True
+SHIP-1570,WH-Toulouse,Product-E,243,2024-03-25,2024-04-30,Pending,ES,116,99,36,False,17,False
+SHIP-1571,WH-Paris,Product-C,182,2024-06-17,2024-07-02,Pending,BE,534,382,15,False,152,True
+SHIP-1572,WH-Paris,Product-B,253,2024-06-28,2024-07-05,In Transit,ES,109,260,7,False,151,True
+SHIP-1573,WH-Lyon,Product-A,477,2024-06-05,2024-06-18,Delayed,DE,468,844,13,False,376,True
+SHIP-1574,WH-Paris,Product-D,24,2024-02-18,2024-03-11,Cancelled,FR,790,913,22,False,123,True
+SHIP-1575,WH-Toulouse,Product-E,69,2024-04-25,2024-05-25,Delayed,FR,543,753,30,False,210,True
+SHIP-1576,WH-Lille,Product-E,248,2024-01-13,2024-02-18,Cancelled,DE,708,592,36,False,116,True
+SHIP-1577,WH-Paris,Product-D,337,2024-02-14,2024-02-23,Cancelled,BE,903,329,9,False,574,True
+SHIP-1578,WH-Lille,Product-E,469,2024-05-09,2024-06-03,In Transit,IT,407,986,25,False,579,True
+SHIP-1579,WH-Lille,Product-B,71,2024-03-28,2024-04-16,Delayed,BE,716,907,19,False,191,True
+SHIP-1580,WH-Toulouse,Product-C,365,2024-05-11,2024-05-31,Cancelled,DE,205,214,20,False,9,False
+SHIP-1581,WH-Marseille,Product-B,364,2024-06-08,2024-06-27,In Transit,BE,555,710,19,False,155,True
+SHIP-1582,WH-Paris,Product-C,288,2024-06-12,2024-07-03,Delayed,BE,584,965,21,False,381,True
+SHIP-1583,WH-Toulouse,Product-C,450,2024-06-19,2024-07-16,Delayed,FR,535,109,27,False,426,True
+SHIP-1584,WH-Lyon,Product-A,344,2024-01-07,2024-02-01,Delivered,DE,273,768,25,False,495,True
+SHIP-1585,WH-Marseille,Product-B,430,2024-02-11,2024-03-01,Delivered,IT,208,771,19,False,563,True
+SHIP-1586,WH-Marseille,Product-D,53,2024-05-18,2024-05-21,Cancelled,BE,885,229,3,False,656,True
+SHIP-1587,WH-Lille,Product-B,262,2024-06-14,2024-07-20,Pending,FR,948,390,36,False,558,True
+SHIP-1588,WH-Marseille,Product-E,28,2024-04-09,2024-05-06,Delivered,IT,207,635,27,False,428,True
+SHIP-1589,WH-Marseille,Product-E,280,2024-04-23,2024-05-08,Cancelled,DE,794,742,15,False,52,True
+SHIP-1590,WH-Lille,Product-B,350,2024-02-19,2024-03-09,Delivered,DE,985,177,19,False,808,True
+SHIP-1591,WH-Lille,Product-A,220,2024-05-11,2024-05-19,Pending,BE,270,133,8,False,137,True
+SHIP-1592,WH-Marseille,Product-A,170,2024-02-11,2024-03-20,Delayed,DE,40,157,38,False,117,True
+SHIP-1593,WH-Paris,Product-E,432,2024-03-23,2024-05-01,Pending,ES,808,586,39,False,222,True
+SHIP-1594,WH-Paris,Product-C,270,2024-05-20,2024-06-12,In Transit,DE,533,69,23,False,464,True
+SHIP-1595,WH-Lille,Product-E,275,2024-05-09,2024-05-20,Delayed,FR,357,226,11,False,131,True
+SHIP-1596,WH-Marseille,Product-C,185,2024-02-24,2024-04-07,Pending,DE,973,770,43,False,203,True
+SHIP-1597,WH-Lille,Product-E,422,2024-06-07,2024-07-11,Delivered,FR,684,354,34,False,330,True
+SHIP-1598,WH-Toulouse,Product-E,125,2024-04-24,2024-05-10,Delivered,IT,390,937,16,False,547,True
+SHIP-1599,WH-Marseille,Product-E,371,2024-01-30,2024-02-24,Pending,FR,933,529,25,False,404,True
+SHIP-1600,WH-Toulouse,Product-D,250,2024-04-05,2024-05-08,Delivered,IT,919,667,33,False,252,True
+SHIP-1601,WH-Toulouse,Product-A,486,2024-02-19,2024-03-11,Delivered,DE,994,979,21,False,15,False
+SHIP-1602,WH-Paris,Product-A,108,2024-05-17,2024-06-21,In Transit,ES,855,106,35,False,749,True
+SHIP-1603,WH-Lille,Product-A,383,2024-02-22,2024-03-28,In Transit,FR,470,734,35,False,264,True
+SHIP-1604,WH-Paris,Product-A,28,2024-03-25,2024-03-28,In Transit,IT,571,72,3,False,499,True
+SHIP-1605,WH-Marseille,Product-D,199,2024-05-27,2024-06-11,Delayed,ES,443,323,15,False,120,True
+SHIP-1606,WH-Paris,Product-E,4,2024-01-05,2024-01-30,Cancelled,FR,774,763,25,False,11,False
+SHIP-1607,WH-Paris,Product-C,476,2024-05-29,2024-06-01,Cancelled,FR,296,805,3,False,509,True
+SHIP-1608,WH-Toulouse,Product-A,145,2024-06-24,2024-07-14,Delayed,ES,404,841,20,False,437,True
+SHIP-1609,WH-Lille,Product-B,274,2024-06-18,2024-06-20,In Transit,DE,764,400,2,False,364,True
+SHIP-1610,WH-Lyon,Product-C,347,2024-05-19,2024-06-07,Pending,FR,566,895,19,False,329,True
+SHIP-1611,WH-Paris,Product-A,3,2024-05-22,2024-06-01,Cancelled,BE,403,550,10,False,147,True
+SHIP-1612,WH-Marseille,Product-B,384,2024-05-20,2024-05-26,Pending,DE,422,927,6,False,505,True
+SHIP-1613,WH-Lyon,Product-B,95,2024-06-14,2024-07-17,In Transit,BE,854,258,33,False,596,True
+SHIP-1614,WH-Lyon,Product-E,437,2024-02-19,2024-02-27,Delivered,BE,472,660,8,False,188,True
+SHIP-1615,WH-Marseille,Product-A,129,2024-05-20,2024-05-25,Delivered,DE,743,594,5,False,149,True
+SHIP-1616,WH-Marseille,Product-B,344,2024-05-04,2024-05-26,In Transit,FR,291,634,22,False,343,True
+SHIP-1617,WH-Marseille,Product-D,231,2024-01-18,2024-01-31,Pending,BE,675,313,13,False,362,True
+SHIP-1618,WH-Lyon,Product-E,291,2024-06-26,2024-08-03,Pending,IT,981,438,38,False,543,True
+SHIP-1619,WH-Marseille,Product-B,403,2024-02-13,2024-02-14,In Transit,ES,283,860,1,False,577,True
+SHIP-1620,WH-Marseille,Product-D,237,2024-04-02,2024-04-11,Delayed,IT,793,312,9,False,481,True
+SHIP-1621,WH-Paris,Product-B,331,2024-05-04,2024-06-09,Cancelled,FR,861,287,36,False,574,True
+SHIP-1622,WH-Lyon,Product-C,376,2024-02-05,2024-03-11,Delivered,FR,913,19,35,False,894,True
+SHIP-1623,WH-Paris,Product-E,297,2024-05-09,2024-06-19,Delayed,BE,217,928,41,False,711,True
+SHIP-1624,WH-Marseille,Product-E,458,2024-01-10,2024-02-15,Cancelled,ES,669,793,36,False,124,True
+SHIP-1625,WH-Lille,Product-B,457,2024-02-08,2024-03-03,Cancelled,IT,137,475,24,False,338,True
+SHIP-1626,WH-Paris,Product-D,187,2024-05-08,2024-06-10,Cancelled,FR,678,244,33,False,434,True
+SHIP-1627,WH-Lyon,Product-E,72,2024-06-06,2024-07-20,Delayed,DE,183,579,44,False,396,True
+SHIP-1628,WH-Lyon,Product-D,481,2024-05-24,2024-07-06,Pending,FR,224,779,43,False,555,True
+SHIP-1629,WH-Paris,Product-C,190,2024-05-04,2024-05-19,In Transit,FR,684,211,15,False,473,True
+SHIP-1630,WH-Lille,Product-D,470,2024-05-12,2024-06-05,Delayed,FR,40,664,24,False,624,True
+SHIP-1631,WH-Toulouse,Product-C,428,2024-03-23,2024-03-30,Pending,BE,557,583,7,False,26,False
+SHIP-1632,WH-Lille,Product-C,301,2024-02-14,2024-03-10,Delivered,BE,257,385,25,False,128,True
+SHIP-1633,WH-Lille,Product-C,419,2024-02-27,2024-04-01,Pending,ES,811,493,34,False,318,True
+SHIP-1634,WH-Toulouse,Product-B,226,2024-06-03,2024-06-04,In Transit,DE,78,526,1,False,448,True
+SHIP-1635,WH-Lyon,Product-B,96,2024-06-13,2024-07-01,In Transit,IT,616,734,18,False,118,True
+SHIP-1636,WH-Lyon,Product-D,416,2024-01-31,2024-03-14,Pending,FR,493,691,43,False,198,True
+SHIP-1637,WH-Lyon,Product-E,83,2024-05-02,2024-06-02,Delayed,FR,249,44,31,False,205,True
+SHIP-1638,WH-Toulouse,Product-B,69,2024-02-02,2024-03-10,Cancelled,FR,912,586,37,False,326,True
+SHIP-1639,WH-Lyon,Product-C,473,2024-02-07,2024-02-11,In Transit,BE,981,415,4,False,566,True
+SHIP-1640,WH-Paris,Product-C,485,2024-06-02,2024-07-09,Delivered,DE,459,621,37,False,162,True
+SHIP-1641,WH-Lyon,Product-B,426,2024-04-30,2024-05-31,Delayed,BE,146,813,31,False,667,True
+SHIP-1642,WH-Toulouse,Product-E,136,2024-05-29,2024-06-10,In Transit,IT,944,464,12,False,480,True
+SHIP-1643,WH-Paris,Product-B,194,2024-06-01,2024-07-09,Delayed,DE,111,16,38,False,95,True
+SHIP-1644,WH-Toulouse,Product-D,424,2024-02-21,2024-03-26,In Transit,BE,98,181,34,False,83,True
+SHIP-1645,WH-Toulouse,Product-A,450,2024-05-01,2024-06-10,Cancelled,BE,770,120,40,False,650,True
+SHIP-1646,WH-Lyon,Product-E,277,2024-01-24,2024-02-24,Delivered,ES,534,430,31,False,104,True
+SHIP-1647,WH-Toulouse,Product-D,118,2024-04-04,2024-04-07,Delayed,ES,358,603,3,False,245,True
+SHIP-1648,WH-Paris,Product-D,69,2024-06-27,2024-08-03,Pending,ES,784,238,37,False,546,True
+SHIP-1649,WH-Toulouse,Product-E,210,2024-01-22,2024-02-10,Pending,DE,5,726,19,False,721,True
+SHIP-1650,WH-Toulouse,Product-A,267,2024-01-02,2024-02-08,Delivered,ES,670,210,37,False,460,True
+SHIP-1651,WH-Lille,Product-C,55,2024-06-25,2024-07-16,In Transit,ES,667,599,21,False,68,True
+SHIP-1652,WH-Toulouse,Product-D,290,2024-03-05,2024-03-22,Pending,BE,282,696,17,False,414,True
+SHIP-1653,WH-Lille,Product-E,402,2024-04-11,2024-04-25,Cancelled,ES,183,379,14,False,196,True
+SHIP-1654,WH-Lille,Product-C,158,2024-05-23,2024-06-28,Cancelled,IT,792,722,36,False,70,True
+SHIP-1655,WH-Paris,Product-B,229,2024-04-11,2024-04-20,In Transit,FR,219,520,9,False,301,True
+SHIP-1656,WH-Toulouse,Product-E,357,2024-04-12,2024-05-04,Delivered,DE,398,987,22,False,589,True
+SHIP-1657,WH-Paris,Product-B,242,2024-06-11,2024-06-12,Cancelled,ES,90,65,1,False,25,False
+SHIP-1658,WH-Marseille,Product-A,312,2024-03-08,2024-03-23,Delivered,ES,953,410,15,False,543,True
+SHIP-1659,WH-Toulouse,Product-C,365,2024-06-06,2024-07-18,Cancelled,FR,968,792,42,False,176,True
+SHIP-1660,WH-Lille,Product-D,6,2024-02-14,2024-03-26,In Transit,BE,292,199,41,False,93,True
+SHIP-1661,WH-Toulouse,Product-E,358,2024-01-09,2024-02-17,In Transit,BE,173,690,39,False,517,True
+SHIP-1662,WH-Lyon,Product-A,500,2024-01-10,2024-02-03,In Transit,FR,282,798,24,False,516,True
+SHIP-1663,WH-Lille,Product-D,301,2024-04-12,2024-05-05,In Transit,BE,15,754,23,False,739,True
+SHIP-1664,WH-Toulouse,Product-C,372,2024-01-18,2024-01-24,Cancelled,BE,356,355,6,False,1,False
+SHIP-1665,WH-Toulouse,Product-B,233,2024-03-11,2024-03-26,Delayed,BE,4,267,15,False,263,True
+SHIP-1666,WH-Toulouse,Product-A,287,2024-02-14,2024-03-12,Delivered,BE,301,348,27,False,47,False
+SHIP-1667,WH-Marseille,Product-E,417,2024-01-30,2024-03-03,Cancelled,IT,710,453,33,False,257,True
+SHIP-1668,WH-Lille,Product-B,388,2024-04-06,2024-05-13,Pending,ES,697,471,37,False,226,True
+SHIP-1669,WH-Lille,Product-A,133,2024-05-30,2024-06-01,Delivered,ES,648,807,2,False,159,True
+SHIP-1670,WH-Lyon,Product-C,212,2024-02-26,2024-04-10,Pending,BE,548,9,44,False,539,True
+SHIP-1671,WH-Lyon,Product-C,48,2024-06-28,2024-07-15,Delayed,IT,77,567,17,False,490,True
+SHIP-1672,WH-Marseille,Product-C,112,2024-02-15,2024-03-17,Cancelled,IT,187,969,31,False,782,True
+SHIP-1673,WH-Lille,Product-B,121,2024-06-23,2024-07-06,In Transit,IT,211,234,13,False,23,False
+SHIP-1674,WH-Toulouse,Product-C,80,2024-02-21,2024-03-08,Delivered,FR,942,80,16,False,862,True
+SHIP-1675,WH-Lille,Product-E,4,2024-06-22,2024-08-04,Cancelled,FR,868,493,43,False,375,True
+SHIP-1676,WH-Marseille,Product-D,460,2024-04-05,2024-05-15,Cancelled,IT,502,187,40,False,315,True
+SHIP-1677,WH-Lille,Product-B,385,2024-05-10,2024-05-28,Cancelled,DE,55,538,18,False,483,True
+SHIP-1678,WH-Toulouse,Product-A,258,2024-04-18,2024-05-19,Pending,ES,881,702,31,False,179,True
+SHIP-1679,WH-Paris,Product-E,236,2024-02-14,2024-03-15,Pending,FR,12,690,30,False,678,True
+SHIP-1680,WH-Toulouse,Product-A,167,2024-02-23,2024-03-19,Pending,BE,882,265,25,False,617,True
+SHIP-1681,WH-Marseille,Product-B,138,2024-02-17,2024-03-24,Delayed,BE,351,374,36,False,23,False
+SHIP-1682,WH-Lille,Product-B,215,2024-02-17,2024-03-20,Pending,IT,874,410,32,False,464,True
+SHIP-1683,WH-Lyon,Product-E,68,2024-03-12,2024-04-10,Cancelled,DE,833,102,29,False,731,True
+SHIP-1684,WH-Toulouse,Product-D,439,2024-03-10,2024-03-26,Delayed,DE,149,819,16,False,670,True
+SHIP-1685,WH-Paris,Product-B,216,2024-02-08,2024-03-10,Delayed,DE,914,869,31,False,45,False
+SHIP-1686,WH-Toulouse,Product-C,403,2024-06-10,2024-07-14,Delayed,IT,256,575,34,False,319,True
+SHIP-1687,WH-Lille,Product-A,354,2024-05-25,2024-05-29,In Transit,FR,220,833,4,False,613,True
+SHIP-1688,WH-Paris,Product-D,382,2024-03-06,2024-04-06,Pending,IT,369,368,31,False,1,False
+SHIP-1689,WH-Marseille,Product-C,11,2024-05-23,2024-06-28,Delayed,FR,359,888,36,False,529,True
+SHIP-1690,WH-Lyon,Product-E,295,2024-06-22,2024-07-31,Cancelled,DE,799,291,39,False,508,True
+SHIP-1691,WH-Toulouse,Product-D,397,2024-03-31,2024-04-21,Delayed,FR,390,628,21,False,238,True
+SHIP-1692,WH-Lyon,Product-B,328,2024-03-14,2024-04-13,Pending,ES,646,627,30,False,19,False
+SHIP-1693,WH-Paris,Product-A,83,2024-05-26,2024-06-21,Pending,DE,321,324,26,False,3,False
+SHIP-1694,WH-Marseille,Product-E,331,2024-06-16,2024-07-05,Delayed,IT,908,455,19,False,453,True
+SHIP-1695,WH-Toulouse,Product-D,212,2024-04-02,2024-05-10,In Transit,DE,874,23,38,False,851,True
+SHIP-1696,WH-Marseille,Product-A,108,2024-02-02,2024-02-18,In Transit,ES,105,97,16,False,8,False
+SHIP-1697,WH-Toulouse,Product-A,14,2024-01-17,2024-02-17,Delayed,BE,783,85,31,False,698,True
+SHIP-1698,WH-Toulouse,Product-B,44,2024-01-27,2024-02-13,Delayed,IT,234,253,17,False,19,False
+SHIP-1699,WH-Lyon,Product-B,270,2024-03-13,2024-04-11,In Transit,FR,35,679,29,False,644,True
+SHIP-1700,WH-Lille,Product-D,500,2024-04-01,2024-04-22,Cancelled,IT,561,455,21,False,106,True
+SHIP-1701,WH-Toulouse,Product-B,303,2024-02-04,2024-03-20,Cancelled,ES,646,766,45,False,120,True
+SHIP-1702,WH-Lille,Product-E,328,2024-06-11,2024-07-18,Cancelled,IT,930,355,37,False,575,True
+SHIP-1703,WH-Lyon,Product-A,227,2024-05-03,2024-06-07,Pending,IT,422,266,35,False,156,True
+SHIP-1704,WH-Paris,Product-A,268,2024-02-09,2024-02-29,In Transit,IT,293,480,20,False,187,True
+SHIP-1705,WH-Lille,Product-D,154,2024-05-16,2024-05-17,Delivered,ES,817,299,1,False,518,True
+SHIP-1706,WH-Paris,Product-E,192,2024-06-01,2024-06-16,In Transit,ES,903,574,15,False,329,True
+SHIP-1707,WH-Lyon,Product-B,367,2024-04-21,2024-05-17,Delayed,ES,225,269,26,False,44,False
+SHIP-1708,WH-Lyon,Product-E,392,2024-01-21,2024-02-18,Cancelled,IT,291,664,28,False,373,True
+SHIP-1709,WH-Lille,Product-B,437,2024-05-16,2024-06-03,Delivered,DE,139,296,18,False,157,True
+SHIP-1710,WH-Lille,Product-E,232,2024-01-29,2024-03-10,Pending,BE,503,192,41,False,311,True
+SHIP-1711,WH-Lyon,Product-A,497,2024-03-23,2024-03-25,Cancelled,FR,190,995,2,False,805,True
+SHIP-1712,WH-Marseille,Product-B,367,2024-01-27,2024-02-15,Delayed,FR,238,92,19,False,146,True
+SHIP-1713,WH-Lille,Product-B,176,2024-02-08,2024-02-09,Delayed,IT,804,818,1,False,14,False
+SHIP-1714,WH-Lille,Product-A,170,2024-05-07,2024-05-31,Delivered,DE,57,272,24,False,215,True
+SHIP-1715,WH-Toulouse,Product-D,93,2024-04-10,2024-04-15,In Transit,IT,836,390,5,False,446,True
+SHIP-1716,WH-Lyon,Product-D,395,2024-01-04,2024-01-12,Delayed,DE,755,34,8,False,721,True
+SHIP-1717,WH-Paris,Product-E,341,2024-02-20,2024-03-21,In Transit,ES,398,697,30,False,299,True
+SHIP-1718,WH-Lyon,Product-A,382,2024-03-20,2024-04-10,Cancelled,BE,125,259,21,False,134,True
+SHIP-1719,WH-Marseille,Product-B,185,2024-05-03,2024-06-13,Delivered,DE,996,115,41,False,881,True
+SHIP-1720,WH-Lille,Product-C,8,2024-03-01,2024-04-11,In Transit,IT,598,122,41,False,476,True
+SHIP-1721,WH-Paris,Product-A,298,2024-04-11,2024-04-27,Delayed,BE,158,380,16,False,222,True
+SHIP-1722,WH-Lyon,Product-D,47,2024-01-23,2024-02-08,Cancelled,IT,953,992,16,False,39,False
+SHIP-1723,WH-Paris,Product-C,331,2024-06-09,2024-06-13,In Transit,BE,810,109,4,False,701,True
+SHIP-1724,WH-Lyon,Product-C,286,2024-02-02,2024-03-05,Pending,ES,750,197,32,False,553,True
+SHIP-1725,WH-Lille,Product-C,371,2024-01-06,2024-02-20,In Transit,IT,920,40,45,False,880,True
+SHIP-1726,WH-Toulouse,Product-C,278,2024-05-04,2024-06-02,Delayed,DE,580,191,29,False,389,True
+SHIP-1727,WH-Marseille,Product-D,141,2024-05-19,2024-06-11,Cancelled,BE,164,70,23,False,94,True
+SHIP-1728,WH-Lille,Product-C,420,2024-05-15,2024-05-25,Pending,BE,375,464,10,False,89,True
+SHIP-1729,WH-Toulouse,Product-D,376,2024-01-01,2024-02-11,In Transit,FR,634,877,41,False,243,True
+SHIP-1730,WH-Lyon,Product-C,370,2024-04-03,2024-05-13,Delivered,BE,838,396,40,False,442,True
+SHIP-1731,WH-Lille,Product-E,79,2024-02-18,2024-03-23,Cancelled,IT,330,419,34,False,89,True
+SHIP-1732,WH-Paris,Product-A,268,2024-06-13,2024-07-04,Delivered,FR,855,960,21,False,105,True
+SHIP-1733,WH-Paris,Product-B,55,2024-02-03,2024-02-15,Delayed,DE,101,32,12,False,69,True
+SHIP-1734,WH-Lille,Product-D,270,2024-05-26,2024-07-07,Cancelled,BE,262,50,42,False,212,True
+SHIP-1735,WH-Toulouse,Product-A,7,2024-04-03,2024-04-18,In Transit,ES,950,911,15,False,39,False
+SHIP-1736,WH-Paris,Product-C,286,2024-01-21,2024-02-20,Delayed,IT,813,725,30,False,88,True
+SHIP-1737,WH-Marseille,Product-E,21,2024-01-15,2024-02-24,Delivered,IT,79,967,40,False,888,True
+SHIP-1738,WH-Paris,Product-A,372,2024-02-25,2024-03-30,In Transit,BE,394,194,34,False,200,True
+SHIP-1739,WH-Lyon,Product-E,321,2024-02-19,2024-03-24,In Transit,BE,767,571,34,False,196,True
+SHIP-1740,WH-Toulouse,Product-C,346,2024-04-16,2024-04-23,Delayed,ES,904,106,7,False,798,True
+SHIP-1741,WH-Toulouse,Product-D,259,2024-02-12,2024-02-24,Pending,DE,546,614,12,False,68,True
+SHIP-1742,WH-Marseille,Product-E,167,2024-04-23,2024-05-16,Pending,ES,782,648,23,False,134,True
+SHIP-1743,WH-Toulouse,Product-B,289,2024-04-20,2024-05-11,Cancelled,DE,384,784,21,False,400,True
+SHIP-1744,WH-Marseille,Product-D,230,2024-05-20,2024-06-06,Delayed,FR,743,35,17,False,708,True
+SHIP-1745,WH-Paris,Product-E,70,2024-03-13,2024-04-21,Pending,FR,307,227,39,False,80,True
+SHIP-1746,WH-Paris,Product-C,471,2024-02-24,2024-03-16,Cancelled,BE,569,584,21,False,15,False
+SHIP-1747,WH-Paris,Product-A,236,2024-05-26,2024-06-05,Pending,DE,141,271,10,False,130,True
+SHIP-1748,WH-Lyon,Product-B,132,2024-04-03,2024-05-11,Pending,FR,584,409,38,False,175,True
+SHIP-1749,WH-Paris,Product-C,406,2024-05-25,2024-06-08,Delayed,DE,499,845,14,False,346,True
+SHIP-1750,WH-Toulouse,Product-A,305,2024-06-25,2024-08-09,Pending,FR,748,827,45,False,79,True
+SHIP-1751,WH-Paris,Product-A,472,2024-05-27,2024-06-21,Pending,IT,900,836,25,False,64,True
+SHIP-1752,WH-Paris,Product-B,383,2024-04-21,2024-05-18,Cancelled,FR,649,796,27,False,147,True
+SHIP-1753,WH-Paris,Product-C,269,2024-06-10,2024-07-05,Delivered,IT,552,578,25,False,26,False
+SHIP-1754,WH-Toulouse,Product-B,79,2024-02-08,2024-02-29,Delivered,ES,994,456,21,False,538,True
+SHIP-1755,WH-Toulouse,Product-A,114,2024-06-01,2024-07-08,Delayed,IT,805,403,37,False,402,True
+SHIP-1756,WH-Marseille,Product-A,244,2024-02-07,2024-02-16,Cancelled,FR,561,408,9,False,153,True
+SHIP-1757,WH-Lille,Product-E,223,2024-03-08,2024-03-14,In Transit,DE,492,572,6,False,80,True
+SHIP-1758,WH-Lille,Product-E,101,2024-02-20,2024-03-23,Cancelled,BE,753,536,32,False,217,True
+SHIP-1759,WH-Paris,Product-C,398,2024-03-04,2024-03-20,Delayed,IT,701,946,16,False,245,True
+SHIP-1760,WH-Paris,Product-D,217,2024-05-27,2024-06-02,Pending,IT,195,328,6,False,133,True
+SHIP-1761,WH-Paris,Product-C,87,2024-03-29,2024-05-07,Pending,BE,841,822,39,False,19,False
+SHIP-1762,WH-Lyon,Product-D,23,2024-04-23,2024-06-02,In Transit,DE,701,382,40,False,319,True
+SHIP-1763,WH-Paris,Product-A,125,2024-02-09,2024-02-15,Cancelled,DE,889,852,6,False,37,False
+SHIP-1764,WH-Marseille,Product-A,157,2024-03-14,2024-03-15,Delayed,ES,23,339,1,False,316,True
+SHIP-1765,WH-Lyon,Product-B,280,2024-02-23,2024-03-29,Cancelled,IT,561,494,35,False,67,True
+SHIP-1766,WH-Paris,Product-D,299,2024-06-08,2024-06-18,Cancelled,FR,261,174,10,False,87,True
+SHIP-1767,WH-Lyon,Product-E,139,2024-01-16,2024-02-04,Delivered,ES,670,967,19,False,297,True
+SHIP-1768,WH-Lille,Product-C,340,2024-01-03,2024-01-08,Pending,FR,19,299,5,False,280,True
+SHIP-1769,WH-Lyon,Product-D,261,2024-06-15,2024-07-10,Delivered,IT,496,887,25,False,391,True
+SHIP-1770,WH-Paris,Product-B,102,2024-06-01,2024-07-06,Cancelled,ES,574,948,35,False,374,True
+SHIP-1771,WH-Lyon,Product-E,157,2024-01-06,2024-01-09,Pending,ES,402,762,3,False,360,True
+SHIP-1772,WH-Marseille,Product-C,182,2024-02-10,2024-02-12,Pending,DE,513,282,2,False,231,True
+SHIP-1773,WH-Marseille,Product-D,456,2024-01-16,2024-02-26,Delivered,BE,971,286,41,False,685,True
+SHIP-1774,WH-Marseille,Product-D,337,2024-02-27,2024-03-08,In Transit,FR,747,391,10,False,356,True
+SHIP-1775,WH-Toulouse,Product-B,214,2024-05-13,2024-06-26,In Transit,BE,156,436,44,False,280,True
+SHIP-1776,WH-Marseille,Product-D,278,2024-03-20,2024-04-28,In Transit,DE,668,141,39,False,527,True
+SHIP-1777,WH-Lyon,Product-B,159,2024-05-28,2024-07-02,Cancelled,DE,440,930,35,False,490,True
+SHIP-1778,WH-Toulouse,Product-B,163,2024-02-07,2024-03-20,Delivered,BE,545,971,42,False,426,True
+SHIP-1779,WH-Marseille,Product-B,373,2024-01-31,2024-02-12,Delivered,IT,901,996,12,False,95,True
+SHIP-1780,WH-Marseille,Product-D,382,2024-04-15,2024-05-12,Pending,DE,797,192,27,False,605,True
+SHIP-1781,WH-Lyon,Product-A,391,2024-01-28,2024-02-06,Cancelled,BE,273,620,9,False,347,True
+SHIP-1782,WH-Lyon,Product-E,119,2024-05-25,2024-07-04,In Transit,FR,367,81,40,False,286,True
+SHIP-1783,WH-Lyon,Product-E,434,2024-06-25,2024-07-26,Cancelled,ES,729,665,31,False,64,True
+SHIP-1784,WH-Lille,Product-D,243,2024-04-05,2024-04-17,In Transit,DE,197,231,12,False,34,False
+SHIP-1785,WH-Paris,Product-C,487,2024-01-09,2024-02-05,Delayed,DE,760,687,27,False,73,True
+SHIP-1786,WH-Paris,Product-B,475,2024-02-21,2024-03-06,Delayed,BE,501,704,14,False,203,True
+SHIP-1787,WH-Lyon,Product-D,208,2024-03-24,2024-04-23,Delivered,BE,752,844,30,False,92,True
+SHIP-1788,WH-Lille,Product-E,481,2024-04-07,2024-04-28,Cancelled,BE,549,537,21,False,12,False
+SHIP-1789,WH-Toulouse,Product-A,232,2024-06-13,2024-06-16,Delayed,FR,898,251,3,False,647,True
+SHIP-1790,WH-Lille,Product-A,286,2024-05-12,2024-06-16,Delayed,BE,783,645,35,False,138,True
+SHIP-1791,WH-Marseille,Product-D,204,2024-01-13,2024-01-26,Pending,IT,472,170,13,False,302,True
+SHIP-1792,WH-Toulouse,Product-A,354,2024-04-18,2024-05-07,Cancelled,DE,474,849,19,False,375,True
+SHIP-1793,WH-Paris,Product-E,58,2024-06-14,2024-07-13,In Transit,BE,960,915,29,False,45,False
+SHIP-1794,WH-Lyon,Product-D,212,2024-06-27,2024-08-01,Pending,ES,25,183,35,False,158,True
+SHIP-1795,WH-Lyon,Product-D,47,2024-04-26,2024-06-03,Pending,IT,708,664,38,False,44,False
+SHIP-1796,WH-Paris,Product-A,362,2024-02-11,2024-02-19,Delayed,IT,87,536,8,False,449,True
+SHIP-1797,WH-Toulouse,Product-B,194,2024-04-08,2024-05-11,Cancelled,ES,44,786,33,False,742,True
+SHIP-1798,WH-Toulouse,Product-B,84,2024-02-13,2024-03-06,In Transit,DE,787,729,22,False,58,True
+SHIP-1799,WH-Marseille,Product-C,374,2024-01-14,2024-02-10,Delayed,IT,641,185,27,False,456,True
+SHIP-1800,WH-Lyon,Product-A,319,2024-01-31,2024-02-09,Pending,FR,469,509,9,False,40,False
+SHIP-1801,WH-Paris,Product-E,452,2024-05-07,2024-06-11,Delayed,DE,222,602,35,False,380,True
+SHIP-1802,WH-Lille,Product-D,227,2024-06-17,2024-07-18,Delivered,BE,614,6,31,False,608,True
+SHIP-1803,WH-Marseille,Product-E,322,2024-03-03,2024-04-08,Cancelled,DE,50,189,36,False,139,True
+SHIP-1804,WH-Marseille,Product-A,75,2024-02-07,2024-02-11,Delivered,BE,858,617,4,False,241,True
+SHIP-1805,WH-Paris,Product-A,56,2024-03-17,2024-04-08,Delayed,DE,165,688,22,False,523,True
+SHIP-1806,WH-Toulouse,Product-E,404,2024-03-13,2024-04-22,Cancelled,DE,989,466,40,False,523,True
+SHIP-1807,WH-Paris,Product-A,394,2024-05-28,2024-06-21,Pending,IT,377,919,24,False,542,True
+SHIP-1808,WH-Lille,Product-E,34,2024-04-07,2024-04-12,Pending,ES,137,124,5,False,13,False
+SHIP-1809,WH-Marseille,Product-E,212,2024-06-26,2024-07-14,Cancelled,DE,712,214,18,False,498,True
+SHIP-1810,WH-Paris,Product-E,374,2024-06-05,2024-06-09,Cancelled,FR,495,741,4,False,246,True
+SHIP-1811,WH-Marseille,Product-D,312,2024-06-25,2024-08-03,Pending,IT,538,588,39,False,50,False
+SHIP-1812,WH-Lyon,Product-E,289,2024-06-08,2024-07-01,Delayed,BE,746,647,23,False,99,True
+SHIP-1813,WH-Lyon,Product-E,120,2024-05-07,2024-06-08,Pending,DE,1,121,32,False,120,True
+SHIP-1814,WH-Paris,Product-B,410,2024-01-07,2024-02-06,Cancelled,ES,423,46,30,False,377,True
+SHIP-1815,WH-Toulouse,Product-B,6,2024-03-26,2024-04-18,In Transit,IT,260,809,23,False,549,True
+SHIP-1816,WH-Marseille,Product-E,282,2024-01-18,2024-02-07,Pending,FR,116,702,20,False,586,True
+SHIP-1817,WH-Lille,Product-E,316,2024-03-26,2024-04-17,Delivered,DE,198,338,22,False,140,True
+SHIP-1818,WH-Lille,Product-D,409,2024-03-27,2024-05-10,Delivered,DE,493,159,44,False,334,True
+SHIP-1819,WH-Toulouse,Product-C,237,2024-06-09,2024-07-09,Delayed,FR,855,533,30,False,322,True
+SHIP-1820,WH-Marseille,Product-E,275,2024-03-17,2024-04-23,Delivered,DE,591,701,37,False,110,True
+SHIP-1821,WH-Paris,Product-B,144,2024-03-25,2024-04-17,Delivered,IT,384,641,23,False,257,True
+SHIP-1822,WH-Toulouse,Product-E,200,2024-05-16,2024-05-27,In Transit,BE,119,885,11,False,766,True
+SHIP-1823,WH-Paris,Product-C,212,2024-03-19,2024-04-09,Delivered,ES,898,243,21,False,655,True
+SHIP-1824,WH-Marseille,Product-B,269,2024-04-05,2024-05-04,Pending,DE,114,383,29,False,269,True
+SHIP-1825,WH-Paris,Product-D,260,2024-01-10,2024-01-23,Delivered,ES,926,512,13,False,414,True
+SHIP-1826,WH-Marseille,Product-D,376,2024-02-09,2024-02-22,Cancelled,IT,794,335,13,False,459,True
+SHIP-1827,WH-Toulouse,Product-B,106,2024-02-06,2024-02-13,Delivered,ES,396,730,7,False,334,True
+SHIP-1828,WH-Paris,Product-C,478,2024-05-13,2024-05-21,Delivered,BE,892,89,8,False,803,True
+SHIP-1829,WH-Paris,Product-A,267,2024-03-26,2024-04-25,Pending,FR,591,776,30,False,185,True
+SHIP-1830,WH-Lyon,Product-C,103,2024-03-20,2024-04-30,In Transit,IT,283,545,41,False,262,True
+SHIP-1831,WH-Paris,Product-C,77,2024-03-22,2024-04-20,In Transit,IT,117,15,29,False,102,True
+SHIP-1832,WH-Toulouse,Product-A,106,2024-06-08,2024-07-14,Cancelled,IT,562,326,36,False,236,True
+SHIP-1833,WH-Marseille,Product-E,126,2024-03-10,2024-03-20,In Transit,FR,318,627,10,False,309,True
+SHIP-1834,WH-Lille,Product-A,67,2024-03-27,2024-05-01,Delivered,ES,924,691,35,False,233,True
+SHIP-1835,WH-Lille,Product-A,45,2024-01-13,2024-01-20,Delayed,ES,183,721,7,False,538,True
+SHIP-1836,WH-Lille,Product-E,183,2024-06-01,2024-07-09,Pending,IT,837,202,38,False,635,True
+SHIP-1837,WH-Paris,Product-D,291,2024-06-20,2024-07-25,In Transit,FR,832,821,35,False,11,False
+SHIP-1838,WH-Paris,Product-D,159,2024-06-27,2024-07-27,Delayed,ES,237,970,30,False,733,True
+SHIP-1839,WH-Toulouse,Product-C,468,2024-02-27,2024-03-08,Pending,ES,187,716,10,False,529,True
+SHIP-1840,WH-Marseille,Product-D,250,2024-06-19,2024-07-11,Delivered,FR,486,115,22,False,371,True
+SHIP-1841,WH-Lille,Product-B,145,2024-03-30,2024-04-30,Pending,BE,588,130,31,False,458,True
+SHIP-1842,WH-Lille,Product-A,167,2024-05-10,2024-05-17,Cancelled,FR,811,309,7,False,502,True
+SHIP-1843,WH-Lille,Product-E,212,2024-05-16,2024-06-15,In Transit,BE,249,561,30,False,312,True
+SHIP-1844,WH-Lille,Product-A,175,2024-02-10,2024-03-12,In Transit,BE,441,803,31,False,362,True
+SHIP-1845,WH-Marseille,Product-E,356,2024-04-21,2024-05-28,In Transit,DE,678,685,37,False,7,False
+SHIP-1846,WH-Lille,Product-A,304,2024-01-20,2024-02-26,Cancelled,ES,333,568,37,False,235,True
+SHIP-1847,WH-Lyon,Product-C,490,2024-01-25,2024-02-23,Delayed,FR,612,111,29,False,501,True
+SHIP-1848,WH-Lille,Product-C,254,2024-06-24,2024-08-02,Delivered,FR,222,836,39,False,614,True
+SHIP-1849,WH-Paris,Product-B,339,2024-02-05,2024-03-14,In Transit,ES,544,298,38,False,246,True
+SHIP-1850,WH-Toulouse,Product-D,101,2024-04-09,2024-05-19,In Transit,IT,306,583,40,False,277,True
+SHIP-1851,WH-Lille,Product-C,46,2024-06-22,2024-07-12,Cancelled,FR,626,522,20,False,104,True
+SHIP-1852,WH-Marseille,Product-A,190,2024-04-13,2024-04-22,Cancelled,FR,0,720,9,False,720,True
+SHIP-1853,WH-Paris,Product-C,444,2024-05-23,2024-06-15,Delivered,DE,442,719,23,False,277,True
+SHIP-1854,WH-Marseille,Product-D,208,2024-05-31,2024-06-26,Delayed,ES,558,216,26,False,342,True
+SHIP-1855,WH-Lille,Product-B,97,2024-06-18,2024-06-30,Cancelled,ES,863,946,12,False,83,True
+SHIP-1856,WH-Lyon,Product-C,447,2024-04-02,2024-04-29,In Transit,DE,11,73,27,False,62,True
+SHIP-1857,WH-Lyon,Product-D,337,2024-06-14,2024-06-16,Delayed,DE,86,140,2,False,54,True
+SHIP-1858,WH-Lille,Product-E,477,2024-06-13,2024-07-10,Delayed,BE,184,465,27,False,281,True
+SHIP-1859,WH-Toulouse,Product-D,197,2024-05-10,2024-06-07,Pending,DE,190,434,28,False,244,True
+SHIP-1860,WH-Toulouse,Product-D,434,2024-06-03,2024-06-04,In Transit,BE,275,420,1,False,145,True
+SHIP-1861,WH-Marseille,Product-A,20,2024-05-19,2024-06-25,Cancelled,ES,721,377,37,False,344,True
+SHIP-1862,WH-Lille,Product-A,73,2024-01-29,2024-03-07,Cancelled,IT,476,529,38,False,53,True
+SHIP-1863,WH-Toulouse,Product-A,126,2024-01-21,2024-02-24,Delayed,FR,700,648,34,False,52,True
+SHIP-1864,WH-Marseille,Product-E,28,2024-05-18,2024-06-25,Pending,BE,797,11,38,False,786,True
+SHIP-1865,WH-Toulouse,Product-D,294,2024-04-30,2024-05-30,Pending,ES,361,983,30,False,622,True
+SHIP-1866,WH-Lyon,Product-A,356,2024-03-16,2024-04-04,Cancelled,IT,744,803,19,False,59,True
+SHIP-1867,WH-Paris,Product-D,297,2024-05-24,2024-06-10,In Transit,BE,52,672,17,False,620,True
+SHIP-1868,WH-Paris,Product-C,249,2024-03-15,2024-04-24,Delivered,DE,517,78,40,False,439,True
+SHIP-1869,WH-Lyon,Product-E,144,2024-03-12,2024-03-29,Pending,IT,14,759,17,False,745,True
+SHIP-1870,WH-Lyon,Product-E,379,2024-01-29,2024-03-08,In Transit,ES,378,827,39,False,449,True
+SHIP-1871,WH-Lyon,Product-D,93,2024-02-14,2024-03-02,Cancelled,FR,351,86,17,False,265,True
+SHIP-1872,WH-Lyon,Product-D,386,2024-02-07,2024-03-17,Delayed,ES,243,676,39,False,433,True
+SHIP-1873,WH-Lyon,Product-B,296,2024-04-22,2024-06-02,Pending,FR,657,270,41,False,387,True
+SHIP-1874,WH-Lyon,Product-D,205,2024-01-30,2024-02-03,Delayed,IT,487,764,4,False,277,True
+SHIP-1875,WH-Lille,Product-D,243,2024-05-16,2024-05-31,Pending,DE,543,891,15,False,348,True
+SHIP-1876,WH-Marseille,Product-D,196,2024-04-21,2024-04-22,Pending,BE,699,978,1,False,279,True
+SHIP-1877,WH-Toulouse,Product-C,490,2024-01-11,2024-01-18,Delayed,BE,940,667,7,False,273,True
+SHIP-1878,WH-Marseille,Product-C,411,2024-03-10,2024-04-01,Delivered,IT,670,598,22,False,72,True
+SHIP-1879,WH-Lyon,Product-E,395,2024-04-10,2024-05-10,In Transit,BE,345,693,30,False,348,True
+SHIP-1880,WH-Marseille,Product-E,6,2024-06-25,2024-07-07,Delivered,FR,12,421,12,False,409,True
+SHIP-1881,WH-Paris,Product-D,180,2024-01-26,2024-02-29,In Transit,IT,257,197,34,False,60,True
+SHIP-1882,WH-Toulouse,Product-A,30,2024-01-09,2024-01-11,Cancelled,DE,973,613,2,False,360,True
+SHIP-1883,WH-Paris,Product-A,439,2024-06-12,2024-06-20,Cancelled,DE,384,672,8,False,288,True
+SHIP-1884,WH-Lyon,Product-A,357,2024-06-14,2024-07-21,In Transit,IT,301,478,37,False,177,True
+SHIP-1885,WH-Lille,Product-C,394,2024-06-18,2024-06-23,Delayed,IT,263,165,5,False,98,True
+SHIP-1886,WH-Paris,Product-D,199,2024-01-19,2024-02-06,Pending,FR,264,978,18,False,714,True
+SHIP-1887,WH-Lille,Product-A,252,2024-03-08,2024-03-20,In Transit,BE,402,182,12,False,220,True
+SHIP-1888,WH-Paris,Product-B,277,2024-06-14,2024-07-16,Delayed,DE,628,658,32,False,30,False
+SHIP-1889,WH-Marseille,Product-A,18,2024-01-28,2024-02-26,Delivered,FR,585,745,29,False,160,True
+SHIP-1890,WH-Paris,Product-D,77,2024-03-05,2024-04-03,Delivered,FR,680,399,29,False,281,True
+SHIP-1891,WH-Marseille,Product-D,295,2024-03-09,2024-03-19,Delivered,BE,724,962,10,False,238,True
+SHIP-1892,WH-Lille,Product-D,433,2024-05-05,2024-06-05,Delivered,BE,231,3,31,False,228,True
+SHIP-1893,WH-Lille,Product-A,291,2024-04-08,2024-05-23,Cancelled,IT,341,698,45,False,357,True
+SHIP-1894,WH-Paris,Product-A,188,2024-03-18,2024-04-13,Cancelled,IT,82,861,26,False,779,True
+SHIP-1895,WH-Lyon,Product-B,284,2024-04-27,2024-05-16,Delivered,ES,676,195,19,False,481,True
+SHIP-1896,WH-Lille,Product-A,323,2024-03-17,2024-05-01,Pending,ES,86,906,45,False,820,True
+SHIP-1897,WH-Lyon,Product-B,19,2024-06-10,2024-07-09,In Transit,FR,737,607,29,False,130,True
+SHIP-1898,WH-Lille,Product-A,406,2024-03-02,2024-04-03,Cancelled,IT,511,546,32,False,35,False
+SHIP-1899,WH-Paris,Product-C,29,2024-04-25,2024-04-27,Pending,FR,415,121,2,False,294,True
+SHIP-1900,WH-Toulouse,Product-D,482,2024-02-24,2024-04-06,Cancelled,DE,758,593,42,False,165,True
+SHIP-1901,WH-Paris,Product-B,251,2024-02-29,2024-03-05,Delivered,ES,928,940,5,False,12,False
+SHIP-1902,WH-Lyon,Product-B,8,2024-06-07,2024-06-10,In Transit,FR,926,314,3,False,612,True
+SHIP-1903,WH-Toulouse,Product-B,428,2024-01-25,2024-02-24,Cancelled,FR,837,837,30,False,0,False
+SHIP-1904,WH-Lille,Product-E,410,2024-01-28,2024-02-05,Cancelled,DE,64,823,8,False,759,True
+SHIP-1905,WH-Marseille,Product-D,167,2024-02-21,2024-03-20,Delivered,BE,558,140,28,False,418,True
+SHIP-1906,WH-Paris,Product-E,89,2024-03-23,2024-04-06,Pending,FR,123,280,14,False,157,True
+SHIP-1907,WH-Lyon,Product-C,284,2024-02-06,2024-03-04,In Transit,ES,249,947,27,False,698,True
+SHIP-1908,WH-Lyon,Product-A,406,2024-05-28,2024-05-31,Cancelled,ES,796,161,3,False,635,True
+SHIP-1909,WH-Paris,Product-A,4,2024-01-05,2024-02-06,In Transit,FR,723,667,32,False,56,True
+SHIP-1910,WH-Lille,Product-D,355,2024-05-31,2024-06-19,In Transit,DE,146,655,19,False,509,True
+SHIP-1911,WH-Lille,Product-D,123,2024-03-10,2024-04-13,In Transit,BE,708,38,34,False,670,True
+SHIP-1912,WH-Lille,Product-E,487,2024-06-01,2024-06-13,Delivered,IT,356,428,12,False,72,True
+SHIP-1913,WH-Lyon,Product-B,61,2024-01-02,2024-02-07,Cancelled,FR,633,370,36,False,263,True
+SHIP-1914,WH-Lyon,Product-D,395,2024-05-18,2024-06-20,In Transit,IT,54,198,33,False,144,True
+SHIP-1915,WH-Lille,Product-D,91,2024-01-29,2024-02-08,In Transit,FR,55,660,10,False,605,True
+SHIP-1916,WH-Lyon,Product-D,129,2024-04-03,2024-04-22,Pending,BE,824,911,19,False,87,True
+SHIP-1917,WH-Paris,Product-A,474,2024-04-26,2024-04-29,Cancelled,DE,161,804,3,False,643,True
+SHIP-1918,WH-Toulouse,Product-A,37,2024-01-08,2024-02-09,In Transit,ES,606,593,32,False,13,False
+SHIP-1919,WH-Lyon,Product-C,118,2024-03-24,2024-04-20,Delivered,IT,233,100,27,False,133,True
+SHIP-1920,WH-Lyon,Product-D,457,2024-03-01,2024-03-28,In Transit,FR,482,599,27,False,117,True
+SHIP-1921,WH-Lille,Product-B,111,2024-05-04,2024-05-08,Cancelled,ES,182,396,4,False,214,True
+SHIP-1922,WH-Lille,Product-B,324,2024-04-05,2024-04-14,Pending,IT,207,343,9,False,136,True
+SHIP-1923,WH-Toulouse,Product-A,144,2024-02-02,2024-02-05,In Transit,FR,872,476,3,False,396,True
+SHIP-1924,WH-Lyon,Product-C,113,2024-04-27,2024-05-24,Pending,BE,160,808,27,False,648,True
+SHIP-1925,WH-Lyon,Product-E,497,2024-06-12,2024-07-22,Cancelled,DE,88,421,40,False,333,True
+SHIP-1926,WH-Lyon,Product-E,243,2024-05-13,2024-06-14,Delayed,IT,14,747,32,False,733,True
+SHIP-1927,WH-Lyon,Product-C,223,2024-04-19,2024-05-05,Cancelled,DE,913,949,16,False,36,False
+SHIP-1928,WH-Toulouse,Product-A,214,2024-05-31,2024-06-10,Delivered,FR,481,751,10,False,270,True
+SHIP-1929,WH-Lille,Product-E,202,2024-05-09,2024-05-12,Delayed,FR,463,507,3,False,44,False
+SHIP-1930,WH-Toulouse,Product-A,355,2024-03-02,2024-03-08,Delayed,DE,135,367,6,False,232,True
+SHIP-1931,WH-Paris,Product-A,246,2024-03-16,2024-04-01,Pending,DE,720,470,16,False,250,True
+SHIP-1932,WH-Paris,Product-D,238,2024-05-26,2024-07-03,In Transit,ES,189,808,38,False,619,True
+SHIP-1933,WH-Lille,Product-A,441,2024-04-04,2024-05-15,Delivered,ES,914,707,41,False,207,True
+SHIP-1934,WH-Paris,Product-C,219,2024-03-26,2024-04-29,Pending,BE,555,589,34,False,34,False
+SHIP-1935,WH-Paris,Product-E,451,2024-02-23,2024-04-07,Pending,FR,527,968,44,False,441,True
+SHIP-1936,WH-Paris,Product-A,197,2024-06-21,2024-07-15,Pending,ES,633,41,24,False,592,True
+SHIP-1937,WH-Lyon,Product-E,361,2024-04-03,2024-04-27,Delivered,BE,726,792,24,False,66,True
+SHIP-1938,WH-Marseille,Product-B,277,2024-02-22,2024-03-02,Delivered,ES,755,961,9,False,206,True
+SHIP-1939,WH-Lyon,Product-B,165,2024-05-28,2024-07-12,Pending,IT,515,696,45,False,181,True
+SHIP-1940,WH-Paris,Product-A,191,2024-04-18,2024-05-06,Pending,ES,497,513,18,False,16,False
+SHIP-1941,WH-Lille,Product-E,348,2024-05-14,2024-05-22,Cancelled,IT,462,635,8,False,173,True
+SHIP-1942,WH-Paris,Product-B,457,2024-04-04,2024-05-18,Delayed,FR,82,400,44,False,318,True
+SHIP-1943,WH-Paris,Product-A,85,2024-02-15,2024-03-05,Pending,FR,713,151,19,False,562,True
+SHIP-1944,WH-Lyon,Product-E,488,2024-05-07,2024-05-17,Delivered,IT,426,992,10,False,566,True
+SHIP-1945,WH-Lyon,Product-D,178,2024-06-23,2024-07-28,Delayed,ES,755,660,35,False,95,True
+SHIP-1946,WH-Lyon,Product-A,12,2024-01-06,2024-01-25,In Transit,BE,660,343,19,False,317,True
+SHIP-1947,WH-Marseille,Product-C,249,2024-04-15,2024-05-23,Cancelled,BE,862,561,38,False,301,True
+SHIP-1948,WH-Marseille,Product-E,68,2024-04-23,2024-05-23,Pending,DE,808,266,30,False,542,True
+SHIP-1949,WH-Marseille,Product-C,395,2024-02-28,2024-03-30,Delivered,DE,361,291,31,False,70,True
+SHIP-1950,WH-Toulouse,Product-B,365,2024-04-26,2024-05-07,Cancelled,IT,186,996,11,False,810,True
+SHIP-1951,WH-Lyon,Product-B,122,2024-02-14,2024-03-30,Delivered,FR,324,588,45,False,264,True
+SHIP-1952,WH-Marseille,Product-C,95,2024-02-02,2024-03-02,In Transit,BE,724,35,29,False,689,True
+SHIP-1953,WH-Marseille,Product-B,191,2024-06-19,2024-07-10,Delayed,BE,998,166,21,False,832,True
+SHIP-1954,WH-Paris,Product-A,208,2024-05-16,2024-06-05,Delayed,DE,970,469,20,False,501,True
+SHIP-1955,WH-Paris,Product-E,500,2024-03-22,2024-04-01,Cancelled,IT,662,722,10,False,60,True
+SHIP-1956,WH-Marseille,Product-E,342,2024-03-16,2024-04-16,In Transit,BE,746,928,31,False,182,True
+SHIP-1957,WH-Paris,Product-D,461,2024-04-23,2024-05-15,Delivered,DE,694,564,22,False,130,True
+SHIP-1958,WH-Paris,Product-D,317,2024-01-30,2024-02-19,In Transit,ES,365,94,20,False,271,True
+SHIP-1959,WH-Toulouse,Product-B,299,2024-03-24,2024-03-28,Cancelled,DE,800,958,4,False,158,True
+SHIP-1960,WH-Paris,Product-A,276,2024-03-12,2024-03-25,Delayed,FR,999,524,13,False,475,True
+SHIP-1961,WH-Lille,Product-C,309,2024-04-10,2024-04-23,Cancelled,BE,966,57,13,False,909,True
+SHIP-1962,WH-Lille,Product-B,367,2024-06-19,2024-07-13,Delayed,IT,395,381,24,False,14,False
+SHIP-1963,WH-Marseille,Product-C,158,2024-01-04,2024-01-23,Delayed,BE,89,220,19,False,131,True
+SHIP-1964,WH-Lille,Product-C,84,2024-04-23,2024-05-20,Delayed,ES,142,855,27,False,713,True
+SHIP-1965,WH-Paris,Product-B,107,2024-05-30,2024-07-08,Pending,ES,888,537,39,False,351,True
+SHIP-1966,WH-Toulouse,Product-D,46,2024-03-26,2024-03-31,Delivered,ES,654,936,5,False,282,True
+SHIP-1967,WH-Lyon,Product-E,237,2024-03-10,2024-04-06,Cancelled,DE,204,190,27,False,14,False
+SHIP-1968,WH-Toulouse,Product-D,22,2024-04-07,2024-04-26,Pending,BE,311,505,19,False,194,True
+SHIP-1969,WH-Lyon,Product-A,406,2024-05-23,2024-06-22,Delivered,DE,268,307,30,False,39,False
+SHIP-1970,WH-Lille,Product-A,335,2024-06-12,2024-07-23,Pending,ES,183,503,41,False,320,True
+SHIP-1971,WH-Lyon,Product-A,62,2024-06-25,2024-08-06,Pending,ES,993,68,42,False,925,True
+SHIP-1972,WH-Toulouse,Product-D,290,2024-06-02,2024-06-26,Delayed,IT,643,702,24,False,59,True
+SHIP-1973,WH-Paris,Product-C,263,2024-05-01,2024-06-15,Cancelled,FR,865,265,45,False,600,True
+SHIP-1974,WH-Paris,Product-B,164,2024-02-11,2024-03-20,Delayed,DE,365,167,38,False,198,True
+SHIP-1975,WH-Marseille,Product-D,326,2024-01-14,2024-02-01,Pending,FR,296,298,18,False,2,False
+SHIP-1976,WH-Paris,Product-E,100,2024-05-15,2024-06-25,In Transit,FR,613,770,41,False,157,True
+SHIP-1977,WH-Marseille,Product-C,424,2024-02-12,2024-03-18,Pending,IT,701,714,35,False,13,False
+SHIP-1978,WH-Paris,Product-E,297,2024-06-25,2024-07-19,Pending,DE,13,140,24,False,127,True
+SHIP-1979,WH-Marseille,Product-D,211,2024-05-12,2024-05-31,Pending,DE,104,223,19,False,119,True
+SHIP-1980,WH-Lyon,Product-B,408,2024-02-09,2024-03-13,Cancelled,BE,706,851,33,False,145,True
+SHIP-1981,WH-Toulouse,Product-A,214,2024-05-14,2024-06-18,Delayed,FR,119,838,35,False,719,True
+SHIP-1982,WH-Lille,Product-C,160,2024-02-03,2024-02-05,Pending,DE,836,452,2,False,384,True
+SHIP-1983,WH-Marseille,Product-B,364,2024-06-01,2024-07-05,Pending,FR,762,834,34,False,72,True
+SHIP-1984,WH-Lyon,Product-B,353,2024-01-31,2024-02-15,In Transit,IT,128,214,15,False,86,True
+SHIP-1985,WH-Lille,Product-A,40,2024-02-03,2024-02-09,Delivered,ES,775,441,6,False,334,True
+SHIP-1986,WH-Paris,Product-A,407,2024-01-11,2024-01-24,Cancelled,BE,60,480,13,False,420,True
+SHIP-1987,WH-Paris,Product-A,155,2024-01-31,2024-02-17,Delivered,FR,801,126,17,False,675,True
+SHIP-1988,WH-Toulouse,Product-B,95,2024-06-03,2024-06-17,Pending,FR,92,149,14,False,57,True
+SHIP-1989,WH-Marseille,Product-C,83,2024-03-12,2024-04-19,Cancelled,BE,247,517,38,False,270,True
+SHIP-1990,WH-Paris,Product-E,391,2024-05-25,2024-05-30,Delivered,BE,222,732,5,False,510,True
+SHIP-1991,WH-Lyon,Product-E,3,2024-02-19,2024-03-09,Delivered,DE,942,516,19,False,426,True
+SHIP-1992,WH-Toulouse,Product-B,226,2024-05-01,2024-05-25,Delivered,DE,854,363,24,False,491,True
+SHIP-1993,WH-Lyon,Product-E,117,2024-04-07,2024-05-05,Delayed,FR,779,321,28,False,458,True
+SHIP-1994,WH-Paris,Product-E,70,2024-02-01,2024-03-02,Delayed,IT,721,295,30,False,426,True
+SHIP-1995,WH-Paris,Product-C,253,2024-05-22,2024-05-25,Delivered,ES,290,467,3,False,177,True
+SHIP-1996,WH-Lille,Product-B,284,2024-06-02,2024-06-22,Delayed,IT,875,438,20,False,437,True
+SHIP-1997,WH-Lille,Product-C,92,2024-02-18,2024-02-23,Delivered,ES,688,107,5,False,581,True
+SHIP-1998,WH-Toulouse,Product-A,62,2024-04-11,2024-05-10,In Transit,ES,410,711,29,False,301,True
+SHIP-1999,WH-Lyon,Product-A,187,2024-05-31,2024-06-07,In Transit,IT,205,609,7,False,404,True
