@@ -1,67 +1,51 @@
 ﻿import streamlit as st
 import pandas as pd
-import sqlite3
 import plotly.express as px
 from datetime import datetime, timedelta
-import os
 import random
 import numpy as np
 
 st.set_page_config(page_title="Warehouse Analytics", layout="wide", initial_sidebar_state="expanded")
 
 @st.cache_data
-def load_data():
-    # Ensure data directory exists
-    os.makedirs('data', exist_ok=True)
+def generate_data():
+    np.random.seed(42)
+    random.seed(42)
     
-    db_path = 'data/logistics.db'
+    dates = [datetime(2024, 1, 1) + timedelta(days=x) for x in range(180)]
+    warehouses = ['WH-Paris', 'WH-Lyon', 'WH-Marseille', 'WH-Lille', 'WH-Toulouse']
+    products = ['Product-A', 'Product-B', 'Product-C', 'Product-D', 'Product-E']
+    statuses = ['Delivered', 'In Transit', 'Pending', 'Delayed', 'Cancelled']
     
-    # Check if database exists
-    if not os.path.exists(db_path):
-        # Generate synthetic data
-        np.random.seed(42)
-        random.seed(42)
+    records = []
+    for i in range(1000):
+        ship_date = random.choice(dates)
+        if random.random() < 0.05:
+            delivery_date = ship_date + timedelta(days=random.randint(46, 60))
+        else:
+            delivery_date = ship_date + timedelta(days=random.randint(1, 45))
         
-        dates = [datetime(2024, 1, 1) + timedelta(days=x) for x in range(180)]
-        warehouses = ['WH-Paris', 'WH-Lyon', 'WH-Marseille', 'WH-Lille', 'WH-Toulouse']
-        products = ['Product-A', 'Product-B', 'Product-C', 'Product-D', 'Product-E']
-        statuses = ['Delivered', 'In Transit', 'Pending', 'Delayed', 'Cancelled']
-        
-        records = []
-        for i in range(1000):
-            ship_date = random.choice(dates)
-            if random.random() < 0.05:
-                delivery_date = ship_date + timedelta(days=random.randint(46, 60))
-            else:
-                delivery_date = ship_date + timedelta(days=random.randint(1, 45))
-            
-            record = {
-                'shipment_id': f'SHIP-{i+1000}',
-                'warehouse': random.choice(warehouses),
-                'product': random.choice(products),
-                'quantity': random.randint(1, 500),
-                'ship_date': ship_date.isoformat(),
-                'delivery_date': delivery_date.isoformat(),
-                'status': random.choice(statuses),
-                'delivery_country': random.choice(['FR', 'DE', 'IT', 'ES', 'BE']),
-                'system_inventory': random.randint(0, 1000),
-                'physical_count': random.randint(0, 1000)
-            }
-            records.append(record)
-        
-        df = pd.DataFrame(records)
-        conn = sqlite3.connect(db_path)
-        df.to_sql('shipments', conn, if_exists='replace', index=False)
-        conn.close()
+        record = {
+            'shipment_id': f'SHIP-{i+1000}',
+            'warehouse': random.choice(warehouses),
+            'product': random.choice(products),
+            'quantity': random.randint(1, 500),
+            'ship_date': ship_date,
+            'delivery_date': delivery_date,
+            'status': random.choice(statuses),
+            'delivery_country': random.choice(['FR', 'DE', 'IT', 'ES', 'BE']),
+            'system_inventory': random.randint(0, 1000),
+            'physical_count': random.randint(0, 1000)
+        }
+        records.append(record)
     
-    # Load from database
-    conn = sqlite3.connect(db_path)
-    df = pd.read_sql_query("SELECT * FROM shipments", conn)
-    conn.close()
+    df = pd.DataFrame(records)
     
-    # Convert and calculate
+    # Convert dates
     df['ship_date'] = pd.to_datetime(df['ship_date'])
     df['delivery_date'] = pd.to_datetime(df['delivery_date'])
+    
+    # Calculate fields
     df['days_in_transit'] = (df['delivery_date'] - df['ship_date']).dt.days
     df['is_outlier'] = df['days_in_transit'] > 45
     df['inventory_variance'] = abs(df['system_inventory'] - df['physical_count'])
@@ -69,11 +53,7 @@ def load_data():
     
     return df
 
-try:
-    df = load_data()
-except Exception as e:
-    st.error(f"Error loading data: {str(e)}")
-    st.stop()
+df = generate_data()
 
 # HEADER
 st.title("📦 Warehouse & Shipping Analytics Dashboard")
